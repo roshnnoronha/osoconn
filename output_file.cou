@@ -1,0 +1,164 @@
+-----------------------------------------------------------------------+---------------------
+Design Inputs                                                          | 
+-----------------------------------------------------------------------+---------------------
+   Design method                                                       | LRFD 
+   Young's modulus of elasticity                                       | 29007.540 ksi
+   Poisson's ratio                                                     | 0.300 
+                                                                       | 
+Connection forces:                                                     | 
+   Transfer force (TF)                                                 | 0.000 kip
+   Shear force (SF)                                                    | 0.000 kip
+                                                                       | 
+Bolt Details:                                                          | 
+   Bolt Diameter                                                       | 0.875 in
+   Number of bolts per clip angle (n)                                  | 3.000 
+   Bolt Gage                                                           | 5.512 in
+   Bolt Spacing                                                        | 2.756 in
+   Nominal tensile capacity of bolt                                    | 90.000 ksi
+   Nominal shear capacity of bolt                                      | 54.000 ksi
+                                                                       | 
+Weld Details:                                                          | 
+   Weld thickness                                                      | 0.236 in
+   Weld tensile strength                                               | 70.000 ksi
+                                                                       | 
+Clip angle dimensions:                                                 | 
+   Clip angle  size (li x lo x ta)                                     | 4x4x0.375 in
+   Clip angle length                                                   | 8.268 in
+   Yield strength of clip angle                                        | 36.000 ksi
+   Tensile strenght of clip angle                                      | 58.000 ksi
+                                                                       | 
+Connecting beam properties:                                            | 
+   Section size                                                        |  
+      Depth                                                            | 12.200 in
+      Flange width                                                     | 8.080 in
+      Flange thickness                                                 | 0.640 in
+      Web thickness (tw)                                               | 0.370 in
+   Yield strength of beam                                              | 36.000 ksi
+   Tensile strength of beam                                            | 58.000 ksi
+   Beam setback from connection member (s)                             | 0.472 in
+   Top cope depth                                                      | 1.378 in
+   Bottom cope depth                                                   | 0.000 in
+   Cope length (c)                                                     | 3.937 in
+                                                                       | 
+Supporting member properties:                                          | 
+   Support type                                                        | Beam Web 
+   Section size                                                        | W18X50 
+      Depth                                                            | 18.000 in
+      Flange width                                                     | 7.500 in
+      Flange thickness                                                 | 0.570 in
+      Web thickness                                                    | 0.355 in
+-----------------------------------------------------------------------+---------------------
+Design Summary                                                         | 
+-----------------------------------------------------------------------+---------------------
+   Connection is OK                                                    |  
+   Maximum utility ratio for connection                                | 0.000 
+-----------------------------------------------------------------------+---------------------
+Design Calculations                                                    | 
+-----------------------------------------------------------------------+---------------------
+                                                                       | 
+Bolt Shear Check:                                                      | 
+   Shear per bolt                                                      | 
+      [Vb=SF/(2*n)]                                                    | 0.000 kip
+   Nominal shear strength of bolt (Rn)                                 | 32.455 kip
+   LRFD factor in bolt shear (phi)                                     | 0.750 
+   Allowable shear strength of bolt                                    | 
+      [Ra=phi*Rn]                                                      | 24.341 kip
+   Utility ratio in bolt shear                                         | 
+      [Vb/Ra]                                                          | 0.000 
+                                                                       | 
+Bolt Bearing at Clip Angle Check:                                      | 
+   Nominal strength in bearing at clip angle (Rn)                      | 23.730 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bearing at clip angle                         | 
+      [Ra=phi*Rn]                                                      | 17.798 kip
+   Utility ratio in bearing at clip angle                              | 
+      [Vb/Ra]                                                          | 0.000 
+                                                                       | 
+Bolt Bearing at Support Check:                                         | 
+   Nominal strength in bearing at support (Rn)                         | 45.066 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bearing at support                            | 
+      [Ra=phi*Rn]                                                      | 33.799 kip
+   Strength reduction factor to account for backing beam (r)           | 0.500 
+   Utility ratio in bearing at support                                 | 
+      [Vb/(Ra*r)]                                                      | 0.000 
+                                                                       | 
+Bolt Tension Check (without prying:                                    | 
+   Tension per bolt without prying                                     | 
+      [Tb=TF/(2*n)]                                                    | 0.000 kip
+   Nominal bolt strength in tension (Rn)                               | 54.091 kip
+   LRFD factor in bolt tension (phi)                                   | 0.750 
+   Allowable bolt strength in tension                                  | 
+      [B=phi*Rn]                                                       | 40.569 kip
+   Utility ratio in bolt tension                                       | 
+      [Tb/B]                                                           | 0.000 
+                                                                       | 
+Clip angle prying action check:                                        | 
+   Bolt strength reduction factor due to clip prying (Q)               | 0.106 
+   Interaction ratio in clip prying                                    | 
+      [Tb/(Q*B)]                                                       | 0.000 
+                                                                       | 
+Weld Check:                                                            | 
+   Maximum stress in weld group (fw)                                   | 0.000 kip/in
+   Nominal strength of weld (Rn)                                       | 7.014 kip/in
+   LRFD factor for weld (phi)                                          | 0.750 
+   Allowable weld strength                                             | 
+      [Ra=phi*Rn]                                                      | 5.261 kip/in
+   Utility ratio for weld                                              | 
+      [fw/Ra]                                                          | 0.000 
+                                                                       | 
+Web Rupture at Weld Check:                                             | 
+   Minimum thickness of web at weld (tw`)                              | 0.000 in
+   Utility ratio in rupture at weld                                    | 
+      [tw`/tw]                                                         | 0.000 
+                                                                       | 
+Clip Angle Shear Yielding Check:                                       | 
+   Shear in clip angle                                                 | 
+      [Va=sqrt(TF^2+SF^2)/2]                                           | 0.000 kip
+   Nominal shear yeilding strength of clip angle (Rn)                  | 66.968 kip
+   LRFD factor for shear yielding (phi)                                | 1.000 
+   Allowable shear yielding strength of clip angle                     | 
+      [Ra=phi*Rn]                                                      | 66.968 kip
+   Utility ratio in shear yielding                                     | 
+      [Va/Ra]                                                          | 0.000 
+                                                                       | 
+Clip Angle Shear Rupture Check:                                        | 
+   Nominal shear rupture strength of clip angle (Rn)                   | 71.190 kip
+   LRFD factor for shear rupture (phi)                                 | 0.750 
+   Shear rupture strength of clip angle                                | 
+      [Ra=phi*Rn]                                                      | 53.393 kip
+   Utility ratio in shear rupture                                      | 
+      [Va/Ra]                                                          | 0.000 
+                                                                       | 
+Beam Cope Flexure Check:                                               | 
+   Eccetricity of applied transfer force from centroid of cope (e)     | 3.000 in
+   Bending moment in coped section                                     | 
+      [M=SF*(s+c)+TF*e]                                                | 0.000 kip in
+   Section modulus of coped section about major axis (Sx)              | 11.742 in^3
+   Critical stress in coped section (Fcr)                              | 36.000 ksi
+   Nominal flexural strength of coped section                          | 
+      [Mn=Fcr*Sx]                                                      | 422.725 kip in
+   LRFD factor in flexure (phi)                                        | 0.900 
+   Allowable flexural strength of coped section                        | 
+      [Ma=phi*Mn]                                                      | 380.452 kip in
+   Utility ratio in coped section flexure                              | 
+      [M/Ma]                                                           | 0.000 
+                                                                       | 
+Beam Cope Compression Check:                                           | 
+   Cross section area of coped section (Ac)                            | 8.939 in^2
+   Critical compressive stress in coped section (fcr)                  | 35.988 ksi
+   Nominal strength of coped section in compression (Pn)               | 
+      [Pn=fcr*Ac]                                                      | 321.684 kip
+   LRFD factor in compression (phi)                                    | 0.900 
+   Allowable compression strength of coped section                     | 
+      [Pa=phi*Pn]                                                      | 289.515 kip
+   Utility ratio in coped section compression                          | 
+      [TF/Pa]                                                          | 0.000 
+                                                                       | 
+Beam Cope Shear Check:                                                 | 
+   Nominal strength of cope in shear (Rn)                              | 86.490 kip
+   LRFD factor in shear yeilding (phi)                                 | 1.000 
+   Allowable shear strength of coped section                           | 
+      [Ra=phi*Rn]                                                      | 86.490 kip
+   Utility ratio in coped section shear                                | 
+      [SF/Ra]                                                          | 0.000 
