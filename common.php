@@ -104,5 +104,5 @@ function drawRunButton(){
 	echo('</div>');
 }
 function execute($inputString){
-	return shell_exec('./osoconn -i -d -c -o output_file.cou -s "'.$inputString.'"');
+	return shell_exec('osoconn -i -d -c -o output_file.cou -s "'.$inputString.'"');
 }
