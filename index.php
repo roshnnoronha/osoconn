@@ -21,7 +21,6 @@ require_once 'common.php';
 	?>
 	<div class="jumbotron">
 	<h1 style="text-align:center">Osoconn</h1>
-	<h5 style="text-align:center; color:red">(BETA)</h5>
 	<p style="text-align:center">A free and open-source steel connection design app.</p>
 	<br>
 	<div id="connection_image" style="text-align:center"> 
