@@ -1,0 +1,47 @@
+{
+"SC001AM10":
+{
+	"description":"SHOP-WELDED, FIELD-BOLTED CLIP ANGLE SHEAR CONNECTION",
+	"type":"Beam connection",
+	"code":"SC001AM10",
+	"specification":"AISC 360-2010",
+	"thumbnail":"/images/sc001_tmb.svg",
+	"image":"/images/sc001am10.svg",
+    "javascript":"sc001am10.js",
+    "input_fields":"sc001am10.json"
+},	
+"MC001AM10":
+{
+	"description":"EXTENDED END PLATE SEISMIC MOMENT CONNECTION",
+	"type":"Beam connection",
+	"code":"MC001AM10",
+	"specification":"AISC 360-2010",
+	"thumbnail":"/images/mc001_tmb.svg",
+	"image":"/images/mc001am10.svg",
+    "javascript":"mc001am10.js",
+    "input_fields":"mc001am10.json"
+},	
+"HB001AM10":
+{
+	"description":"DOUBLE ANGLE HORIZONTAL BRACING CONNECTION",
+	"type":"Bracing connection",
+	"code":"HB001AM10",
+	"specification":"AISC 360-2010",
+	"thumbnail":"/images/hb001_tmb.svg",
+	"image":"/images/hb001am10.svg",
+    "javascript":"hb001am10.js",
+    "input_fields":"hb001am10.json"
+},	
+"VB001AM10":
+{
+	"description":"DOUBLE ANGLE BEAM-COLUMN VERTICAL BRACING CONNECTION",
+	"type":"Bracing connection",
+	"code":"VB001AM10",
+	"specification":"AISC 360-2010",
+	"thumbnail":"/images/vb001_tmb.svg",
+	"image":"/images/vb001am10.svg",
+    "javascript":"vb001am10.js",
+    "input_fields":"vb001am10.json"
+}
+
+}

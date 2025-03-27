@@ -1,0 +1,16 @@
+#void information
+void/
+
+#build files
+build/
+bin/
+
+#validation native files
+/validation
+
+#script file to copy folder to server
+/copy2server.sh
+
+#task list
+/todo.txt
+

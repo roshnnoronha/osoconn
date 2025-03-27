@@ -1,0 +1,417 @@
+Osoconn v1.1
+Connection code : HB001AM10
+Connection ID : HB001_2
+-----------------------------------------------------------------------+---------------------
+Design Summary                                                         | 
+-----------------------------------------------------------------------+---------------------
+   Connection is OK                                                    |  
+   Maximum interaction ratio                                           | 0.490 
+-----------------------------------------------------------------------+---------------------
+Design Input                                                           | 
+-----------------------------------------------------------------------+---------------------
+   Design method                                                       | LRFD 
+   Brace axial force (P)                                               | 45.000 kip
+                                                                       | 
+   Beam steel grade                                                    | ASTM A36 
+   Beam yield strength                                                 | 36.000 ksi
+   Beam tensile strength                                               | 58.000 ksi
+                                                                       | 
+   Angle steel grade                                                   | ASTM A36 
+   Angle yield strength                                                | 36.000 ksi
+   Angle tensile strength                                              | 58.000 ksi
+                                                                       | 
+   Plate steel grade                                                   | ASTM A36 
+   Plate yield strength                                                | 36.000 ksi
+   Plate tensile strength                                              | 58.000 ksi
+                                                                       | 
+   Number of bolts in gusset to brace connection                       | 3 
+   Number of bolt rows in gusset to brace connection                   | 1 
+   Number of bolts in connection 1 (n1)                                | 5 
+   Number of bolts in connection 2 (n2)                                | 4 
+                                                                       | 
+   Bolt grade                                                          | ASTM A325 
+   Bolt nominal tensile strength                                       | 90.000 ksi
+   Bolt type                                                           | Bearing 
+   Bolt thread in shear plane                                          | Yes 
+   Bolt diameter                                                       | 0.875 in
+   Bolt gage on brace angle                                            | 1.750 in
+   Bolt spacing                                                        | 2.500 in
+   Bolt distance to edge on brace in the direction of force            | 1.250 in
+                                                                       | 
+   Weld electrode                                                      | E70 
+   Weld tensile strength                                               | 70.000 ksi
+                                                                       | 
+   Brace section                                                       | 2 X L4X3X3/8 
+   Brace angle from beam at connection 1 (theta)                       | 35.000 deg
+   Orientation of back to back legs                                    | Vertical 
+   Outstanding leg type                                                | Short Leg 
+                                                                       | 
+   Gusset plate thickness                                              | 0.500 in
+   Gusset dimension along connection 1                                 | 20.000 in
+   Gusset dimension along connection 2                                 | 20.000 in
+   Gusset cutout along connection 1                                    | 4.000 in
+   Gusset cutout along connection 2                                    | 4.000 in
+                                                                       | 
+   Connection type at connection 1                                     | Shear Tab 
+   Connection type at connection 2                                     | Shear Tab 
+                                                                       | 
+   Thickness of shear tab                                              | 0.500 in
+   Thickness of shear tab to beam weld                                 | 0.250 in
+   Bolt gage on shear tab (gs)                                         | 1.750 in
+                                                                       | 
+   Section property of beam at connection 1                            | W10X30 
+      Thickness of web                                                 | 0.300 in
+      Thickness of flange                                              | 0.510 in
+      Width of fange                                                   | 5.810 in
+   Section property of beam at connection 2                            | W10X19 
+      Thickness of web                                                 | 0.250 in
+      Thickness of flange                                              | 0.395 in
+      Width of fange                                                   | 4.020 in
+-----------------------------------------------------------------------+---------------------
+Design Calculation                                                     | 
+-----------------------------------------------------------------------+---------------------
+                                                                       | 
+Bolt shear at brace check:                                             | 
+   Nominal strength of bolts in shear (Rn)                             | 194.853 kip
+   LRFD factor in bolt shear (phi)                                     | 0.750 
+   Allowable strength in bolt shear                                    | 
+      [Ra=phi*Rn]                                                      | 146.140 kip
+   Interaction ratio in bolt shear                                     | 
+      [P/Ra]                                                           | 0.308 
+                                                                       | 
+Bolt bearing at brace check:                                           | 
+   Shear force per bolt in brace connection (Pb)                       | 7.500 kip
+   Nominal strength in bolt bearing at brace (Rn)                      | 20.391 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bolt bearing at brace                         | 
+      [Ra=phi*Rn]                                                      | 15.293 kip
+   Interaction ratio in bolt bearing at brace                          | 
+      [Pb/Ra]                                                          | 0.490 
+                                                                       | 
+Bolt bearing at gusset check:                                          | 
+   Nominal strength in bolt bearing at gusset plate                    | 27.188 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bolt bearing at gusset                        | 
+      [Ra=phi*Rn]                                                      | 20.391 kip
+   Interaction ratio in bolt bearing at gusset plate                   | 
+      [Pb/Ra]                                                          | 0.368 
+                                                                       | 
+Brace tension rupture check:                                           | 
+   Gross area of brace                                                 | 4.980 in^2
+   Shear Lag Factor (U)                                                | 0.845 
+   Net area of brace (An)                                              | 4.277 in^2
+   Effective area for tensile rupture                                  | 
+      [Ae=An*U]                                                        | 3.614 in^2
+   Nominal strength in brace rupture (Pn)                              | 209.610 kip
+   LRFD factor in tension rupture (phi)                                | 0.750 
+   Allowable strength in brace rupture                                 | 
+      [Pa=phi*Pn]                                                      | 157.207 kip
+   Interaction ratio in brace rupture                                  | 
+      [P/Pa]                                                           | 0.286 
+                                                                       | 
+Brace block shear check:                                               | 
+   Gross area in shear                                                 | 4.688 in^2
+   Net area in shear                                                   | 2.930 in^2
+   Net area in tension                                                 | 1.336 in^2
+   Nominal block shear strength at brace (Rn)                          | 178.734 kip
+   LRFD factor in block shear (phi)                                    | 0.750 
+   Alloable block shear strength at brace                              | 
+      [Ra=phi*Rn]                                                      | 134.051 kip
+   Interaction ratio in block shear at brace                           | 
+      [P/Ra]                                                           | 0.336 
+                                                                       | 
+Gusset tension yielding check:                                         | 
+   Lenght of Whitmore section                                          | 9.524 in
+   Gusset plate area in tension yielding                               | 4.980 in^2
+   Nominal strength in gusset yielding (Pn)                            | 171.423 kip
+   LRFD factor in tension yielding                                     | 
+      [phi]                                                            | 0.900 
+   Allowable strength of gusset tension yielding                       | 
+      [Pa=phi*Pn]                                                      | 154.281 kip
+   Interaction ratio in gusset plate tension yielding                  | 
+      [P/Pa]                                                           | 0.292 
+                                                                       | 
+Gusset tension rupture check:                                          | 
+   Gusset plate net area in tension                                    | 3.824 in^2
+   Nominal strength in gusset rupture (Pn)                             | 221.807 kip
+   LRFD factor in tension rupture                                      | 
+      [phi]                                                            | 0.750 
+   Allowable strength of gusset tension rupture                        | 
+      [Pa=phi*Pn]                                                      | 166.355 kip
+   Interaction ratio in gusset plate tension rupture                   | 
+      [P/Pa]                                                           | 0.271 
+                                                                       | 
+Gusset block shear check:                                              | 
+   Gross area in shear                                                 | 6.250 in^2
+   Net area in shear                                                   | 3.906 in^2
+   Net area in tension                                                 | 1.406 in^2
+   Nominal strength of gusset in block shear (Rn)                      | 216.562 kip
+   LRFD factor in block shear (phi)                                    | 0.750 
+   Allowable strength og gusset in block shear                         | 
+      [Ra=phi*Rn]                                                      | 162.422 kip
+   Interaction ratio in block shear at gusset plate                    | 
+      [P/Ra]                                                           | 0.277 
+                                                                       | 
+Connection 1 Checks                                                    | 
+-------------------                                                    | 
+   Component of brace force along connection 1                         | 
+      [P1=P*cos(theta)]                                                | 36.862 kip
+   Force per bolt in connection 1                                      | 
+      [Pb1=P1/n1]                                                      | 7.372 kip
+                                                                       | 
+Bolt shear check:                                                      | 
+   Nominal strength in bolt shear (Rn)                                 | 32.476 kip
+   LRFD factor in bolt shear (phi)                                     | 0.750 
+   Allowable strength in bolt shear                                    | 
+      [Ra=phi*Rn]                                                      | 24.357 kip
+   Interaction ratio in bolt shear                                     | 
+      [Pb1/Ra]                                                         | 0.303 
+                                                                       | 
+Bolt bearing at shear tab check:                                       | 
+   Nominal strength in bolt bearing at shear tab (Rn)                  | 22.837 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bolt bearing at shear tab                     | 
+      [Ra=phi*Rn]                                                      | 17.128 kip
+   Interaction ratio in bolt bearing at shear tab                      | 
+      [Pb1/Ra]                                                         | 0.430 
+                                                                       | 
+Bolt bearing at gusset check:                                          | 
+   Nominal strength in bolt bearing at gusset (Rn)                     | 54.375 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bolt bearing at gusset                        | 
+      [Ra=phi*Rn]                                                      | 40.781 kip
+   Interaction ratio in bolt bearing at gusset                         | 
+      [Pb1/Ra]                                                         | 0.181 
+                                                                       | 
+Gusset shear yielding check:                                           | 
+   Gusset plate shear area                                             | 8.000 in^2
+   Nominal shear strength of gusset in yielding (Rn)                   | 172.800 kip
+   LRFD factor in shear yielding (phi)                                 | 1.000 
+   Allowable shear strength of gusset in yielding                      | 
+      [Ra=phi*Rn]                                                      | 172.800 kip
+   Interaction ratio in shear yielding at gusset                       | 
+      [P1/Ra]                                                          | 0.213 
+                                                                       | 
+Gusset shear rupture check:                                            | 
+   Gusset gross area in shear                                          | 8.000 in^2
+   Gusset net area in shear                                            | 5.656 in^2
+   Nominal shear strength of gusset in rupture (Rn)                    | 196.837 kip
+   LRFD factor in shear rupture (phi)                                  | 0.750 
+   Allowable shear strength of gusset in rupture                       | 
+      [phi*Rn]                                                         | 147.628 kip
+   Interaction ratio in shear rupture of gusset                        | 
+      [P1/Ra]                                                          | 0.250 
+                                                                       | 
+Gusset plate block shear check:                                        | 
+   Gross area in shear for block shear rupture                         | 6.750 in^2
+   Net area in shear for block shear rupture                           | 4.641 in^2
+   Net area in tension for block shear rupture                         | 0.391 in^2
+   Nominal strength in block shear at gusset (Rn)                      | 168.456 in^2
+   LRFD factor in BLOCK shear (phi)                                    | 0.750 
+   Allowable strength in block shear at gusset plate                   | 
+      [Ra=phi*Rn]                                                      | 126.342 kip
+   Interaction ratio in block shear at gusset plate                    | 
+      [P1/Ra]                                                          | 0.292 
+                                                                       | 
+Gusset flexure yielding check:                                         | 
+   Eccentricity of force at connection (e)                             | 4.650 in
+   Nominal flexure strength of gusset in yielding (Mn)                 | 1800.000 kip in
+   LRFD factor in flexure yielding (phi)                               | 0.900 
+   Allowable flexure strength of gusset in yielding                    | 
+      [Ma=phi*Mn]                                                      | 1620.000 kip in
+   Interaction ratio in flexure yielding at gusset                     | 
+      [P1*e/Ma]                                                        | 0.106 
+                                                                       | 
+Shear tab shear yielding check:                                        | 
+   Gross area in shear                                                 | 6.125 in^2
+   Nominal shear yielding strength of connecting element (Rn)          | 132.300 kip
+   LRFD factor in shear yielding (phi)                                 | 1.000 
+   Allowable shear yielding strength of connecting element             | 
+      [Ra=phi*Rn]                                                      | 132.300 kip
+   Interaction ratio in shear yielding of element                      | 
+      [P1/Ra]                                                          | 0.279 
+                                                                       | 
+Shear tab shear rupture check:                                         | 
+   Connecting element net area in shear                                | 3.781 in^2
+   Nominal shear strength of connecting element in rupture (Rn)        | 131.587 kip
+   LRFD factor in shear rupture (phi)                                  | 0.750 
+   Allowable shear strength of connecting element in rupture           | 
+      [Ra=phi*Rn]                                                      | 98.691 kip
+   Interaction ratio in shear rupture of connecting element            | 
+      [P1/Ra]                                                          | 0.374 
+                                                                       | 
+Shear tab block shear check:                                           | 
+   Gross area in shear for block shear rupture                         | 5.562 in^2
+   Net area in shear for block shear rupture                           | 3.453 in^2
+   Net area in tension for block shear rupture                         | 0.641 in^2
+   Nominal strength in block shear at shear tab (Rn)                   | 157.306 kip
+   LRFD factor in block shear (phi)                                    | 0.750 
+   Allowable strength in block shear at connecting element             | 
+      [Ra=phi*Rn]                                                      | 117.980 kip
+   Interaction ratio in block shear at connecting element              | 
+      [P1/Ra]                                                          | 0.312 
+                                                                       | 
+Shear tab flexure yeilding check:                                      | 
+   Nominal flexure yeilding strength of connecting element (Mn)        | 675.281 kip in
+   LRFD factor in flexure (phi)                                        | 0.900 
+   Allowable strength of connecting element in flexure                 | 
+      [Ma=phi*Mn]                                                      | 607.753 kip in
+   Interaction ratio in flexure yielding of connecting element         | 
+      [P1*gs/Ma]                                                       | 0.106 
+                                                                       | 
+Weld check:                                                            | 
+   Maximum stress in weld (f)                                          | 1.982 kip/in
+   Nominal weld strength (fn)                                          | 7.423 kip/in
+   LRFD factor for weld strength(phi)                                  | 0.750 
+   Allowable weld strength                                             | 
+      [fa=phi*fn]                                                      | 5.568 kip/in
+   Interaction ratio for weld strength                                 | 
+      [f/fa]                                                           | 0.356 
+                                                                       | 
+Shear tab rupture at weld check:                                       | 
+   Nominal strength of shear tab rupture at weld (Rn)                  | 17.400 kip/in
+   LRFD factor for rupture at weld (phi)                               | 0.750 
+   Allowable strength of shear tab rupture at weld                     | 
+      [Ra=phi*Rn]                                                      | 13.050 kip/in
+   Interaction ratio for shear tab rupture at weld                     | 
+      [P1/Ra]                                                          | 0.304 
+                                                                       | 
+Beam web rupture at weld check:                                        | 
+   Nominal strength of beam web at weld (Rn)                           | 10.440 kip/in
+   LRFD factor for rupture at weld (phi)                               | 0.750 
+   Allowable strength of beam web rupture at weld                      | 
+      [Ra=phi*Rn]                                                      | 7.830 kip/in
+   Interaction ratio for beam web rupture at weld                      | 
+      [P1/Ra]                                                          | 0.253 
+                                                                       | 
+Connection 2 Checks                                                    | 
+-------------------                                                    | 
+   Component of brace force along connection 2                         | 
+      [P2=P*sin(theta)]                                                | 25.811 kip
+   Force per bolt in connection 2                                      | 
+      [Pb2=P2/n2]                                                      | 6.453 kip
+                                                                       | 
+Bolt shear check:                                                      | 
+   Nominal strength in bolt shear (Rn)                                 | 32.476 kip
+   LRFD factor in bolt shear (phi)                                     | 0.750 
+   Allowable strength in bolt shear                                    | 
+      [Ra=phi*Rn]                                                      | 24.357 kip
+   Interaction ratio in bolt shear                                     | 
+      [Pb2/Ra]                                                         | 0.265 
+                                                                       | 
+Bolt bearing at shear tab check:                                       | 
+   Nominal strength in bolt bearing at shear tab (Rn)                  | 22.837 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bolt bearing at shear tab                     | 
+      [Ra=phi*Rn]                                                      | 17.128 kip
+   Interaction ratio in bolt bearing at shear tab                      | 
+      [Pb2/Ra]                                                         | 0.377 
+                                                                       | 
+Bolt bearing at gusset check:                                          | 
+   Nominal strength in bolt bearing at gusset (Rn)                     | 54.375 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bolt bearing at gusset                        | 
+      [Ra=phi*Rn]                                                      | 40.781 kip
+   Interaction ratio in bolt bearing at gusset                         | 
+      [Pb2/Ra]                                                         | 0.158 
+                                                                       | 
+Gusset shear yielding check:                                           | 
+   Gusset plate shear area                                             | 8.000 in^2
+   Nominal shear strength of gusset in yielding (Rn)                   | 172.800 kip
+   LRFD factor in shear yielding (phi)                                 | 1.000 
+   Allowable shear strength of gusset in yielding                      | 
+      [Ra=phi*Rn]                                                      | 172.800 kip
+   Interaction ratio in shear yielding at gusset                       | 
+      [P2/Ra]                                                          | 0.149 
+                                                                       | 
+Gusset shear rupture check:                                            | 
+   Gusset gross area in shear                                          | 8.000 in^2
+   Gusset net area in shear                                            | 6.125 in^2
+   Nominal shear strength of gusset in rupture (Rn)                    | 213.150 kip
+   LRFD factor in shear rupture (phi)                                  | 0.750 
+   Allowable shear strength of gusset in rupture                       | 
+      [phi*Rn]                                                         | 159.862 kip
+   Interaction ratio in shear rupture of gusset                        | 
+      [P2/Ra]                                                          | 0.161 
+                                                                       | 
+Gusset block shear check:                                              | 
+   Gross area in shear for block shear rupture                         | 5.612 in^2
+   Net area in shear for block shear rupture                           | 3.972 in^2
+   Net area in tension for block shear rupture                         | 0.391 in^2
+   Nominal strength in block shear at gusset (Rn)                      | 143.886 in^2
+   LRFD factor in BLOCK shear (phi)                                    | 0.750 
+   Allowable strength in block shear at gusset plate                   | 
+      [Ra=phi*Rn]                                                      | 107.915 kip
+   Interaction ratio in block shear at gusset plate                    | 
+      [P2/Ra]                                                          | 0.239 
+                                                                       | 
+Gusset flexure yielding check:                                         | 
+   Eccentricity of force at connection (e)                             | 4.625 in
+   Nominal flexure strength of gusset in yielding (Mn)                 | 1800.000 kip in
+   LRFD factor in flexure yielding (phi)                               | 0.900 
+   Allowable flexure strength of gusset in yielding                    | 
+      [Ma=phi*Mn]                                                      | 1620.000 kip in
+   Interaction ratio in flexure yielding at gusset                     | 
+      [P1*e/Ma]                                                        | 0.074 
+                                                                       | 
+Shear tab shear yielding check:                                        | 
+   Gross area in shear                                                 | 4.875 in^2
+   Nominal shear yielding strength of connecting element (Rn)          | 105.300 kip
+   LRFD factor in shear yielding (phi)                                 | 1.000 
+   Allowable shear yielding strength of connecting element             | 
+      [Ra=phi*Rn]                                                      | 105.300 kip
+   Interaction ratio in shear yielding of element                      | 
+      [P2/Ra]                                                          | 0.245 
+                                                                       | 
+Shear tab shear rupture check:                                         | 
+   Connecting element net area in shear                                | 3.000 in^2
+   Nominal shear strength of connecting element in rupture (Rn)        | 104.400 kip
+   LRFD factor in shear rupture (phi)                                  | 0.750 
+   Allowable shear strength of connecting element in rupture           | 
+      [Ra=phi*Rn]                                                      | 78.300 kip
+   Interaction ratio in shear rupture of connecting element            | 
+      [P2/Ra]                                                          | 0.330 
+                                                                       | 
+Shear tab block shear check:                                           | 
+   Gross area in shear for block shear rupture                         | 4.312 in^2
+   Net area in shear for block shear rupture                           | 2.672 in^2
+   Net area in tension for block shear rupture                         | 0.641 in^2
+   Nominal strength in block shear at shear tab (Rn)                   | 130.137 kip
+   LRFD factor in block shear (phi)                                    | 0.750 
+   Allowable strength in block shear at connecting element             | 
+      [Ra=phi*Rn]                                                      | 97.603 kip
+   Interaction ratio in block shear at connecting element              | 
+      [P2/Ra]                                                          | 0.264 
+                                                                       | 
+Shear tab flexure yeilding check:                                      | 
+   Nominal flexure yeilding strength of connecting element (Mn)        | 427.781 kip in
+   LRFD factor in flexure (phi)                                        | 0.900 
+   Allowable strength of connecting element in flexure                 | 
+      [Ma=phi*Mn]                                                      | 385.003 kip in
+   Interaction ratio in flexure yielding of connecting element         | 
+      [P2*gs/Ma]                                                       | 0.117 
+                                                                       | 
+Weld check:                                                            | 
+   Maximum stress in weld (f)                                          | 1.945 kip/in
+   Nominal weld strength (fn)                                          | 7.423 kip/in
+   LRFD factor for weld strength(phi)                                  | 0.750 
+   Allowable weld strength                                             | 
+      [fa=phi*fn]                                                      | 5.568 kip/in
+   Interaction ratio for weld strength                                 | 
+      [f/fa]                                                           | 0.349 
+                                                                       | 
+Shear tab rupture at weld check:                                       | 
+   Nominal strength of shear tab rupture at weld (Rn)                  | 17.400 kip
+   LRFD factor for rupture at weld (phi)                               | 0.750 
+   Allowable strength of shear tab rupture at weld                     | 
+      [Ra=phi*Rn]                                                      | 13.050 kip
+   Interaction ratio for shear tab rupture at weld                     | 
+      [P2/Ra]                                                          | 0.298 
+                                                                       | 
+Beam web rupture at weld check:                                        | 
+   Nominal strength of beam web at weld (Rn)                           | 8.700 kip
+   LRFD factor for rupture at weld (phi)                               | 0.750 
+   Allowable strength of beam web rupture at weld                      | 
+      [Ra=phi*Rn]                                                      | 6.525 kip
+   Interaction ratio for beam web rupture at weld                      | 
+      [P2/Ra]                                                          | 0.298 

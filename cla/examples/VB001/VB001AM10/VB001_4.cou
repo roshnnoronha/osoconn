@@ -1,0 +1,368 @@
+Osoconn v1.1
+Connection code : VB001AM10
+Connection ID : VB001_4
+-----------------------------------------------------------------------+---------------------
+Design Summary                                                         | 
+-----------------------------------------------------------------------+---------------------
+   Connection is OK                                                    |  
+   Maximum interaction ratio                                           | 0.973 
+-----------------------------------------------------------------------+---------------------
+Design Input                                                           | 
+-----------------------------------------------------------------------+---------------------
+   Design method                                                       | ASD 
+   Brace axial force (P)                                               | 105000.000 N
+   Shear force in beam (Rb)                                            | 95000.000 N
+   Transfer force in connection (Tf)                                   | 80000.000 N
+                                                                       | 
+   Angle steel grade                                                   | ASTM A36 
+   Yield strength of angle section                                     | 250.000 MPa
+   Tensile strength of angle section                                   | 400.000 MPa
+                                                                       | 
+   Beam steel grade                                                    | ASTM A36 
+   Yield strength of beam section                                      | 250.000 MPa
+   Tensile strength of beam section                                    | 400.000 MPa
+                                                                       | 
+   Column steel grade                                                  | ASTM A36 
+   Yield strength of column section                                    | 250.000 MPa
+   Tensile strength of column section                                  | 400.000 MPa
+                                                                       | 
+   Plate steel grade                                                   | ASTM A36 
+   Yield strength of plate                                             | 250.000 MPa
+   Tensile strength of plate                                           | 400.000 MPa
+                                                                       | 
+   Bolt grade                                                          | ASTM A325 
+   Bolt type                                                           | Bearing 
+   Bolt thread in shear plane                                          | Yes 
+   Bolt diameter                                                       | 22.000 mm
+   Bolt gage                                                           | 110.000 mm
+   Bolt spacing                                                        | 70.000 mm
+   Bolt edge distance to brace edge                                    | 30.000 mm
+   Bolt edge distance to gusset edge                                   | 30.000 mm
+   Bolt edge distance to clip angle edge                               | 30.000 mm
+                                                                       | 
+   Weld electrode                                                      | E70 
+   Weld tensile strength                                               | 482.000 MPa
+                                                                       | 
+   Brace section                                                       | L89X89X6.4 
+   Brace angle with beam                                               | 35.000 deg
+   Gusset plate thickness (tg)                                         | 16.000 mm
+   Gusset to beam weld thickness                                       | 8.000 mm
+   Gusset length at connection to beam                                 | 400.000 mm
+   Number of bolts per row at brace (nb)                               | 3 
+   Number of bolt rows at brace                                        | 1 
+   Clip angle section                                                  | L89X76X12.7 
+   Number of bolts at beam to column connection (n1)                   | 2 
+   Number of bolts at gusset to column connection (n2)                 | 3 
+   Weld thickness at clip angle                                        | 8.000 mm
+   Beam section property                                               | W250X101 
+      Depth                                                            | 264.000 mm
+      Flange width                                                     | 257.000 mm
+      Web thickness                                                    | 11.900 mm
+      Flange thickness                                                 | 19.600 mm
+   Column section property                                             | W310X107 
+      Depth                                                            | 312.000 mm
+      Flange width                                                     | 305.000 mm
+      Web thickness                                                    | 10.900 mm
+      Flange thickness                                                 | 17.000 mm
+-----------------------------------------------------------------------+---------------------
+Design Calculation                                                     | 
+-----------------------------------------------------------------------+---------------------
+                                                                       | 
+Bolt shear check at brace:                                             | 
+   Shear per bolt (Pb)                                                 | 35000.000 N
+   Nominal bolt shear strength (Rn)                                    | 282855.408 N
+   ASD factor in bolt shear (omega)                                    | 2.000 
+   Allowable strength of bolt in shear                                 | 
+      [Ra=Rn/omega]                                                    | 141427.704 N
+   Interaction ratio for bolt shear                                    | 
+      [Pb/Ra]                                                          | 0.247 
+                                                                       | 
+Bolt bearing at brace check:                                           | 
+   Nominal strength of bolt bearing at brace (Rn)                      | 54864.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength of bolt bearing at brace                         | 
+      [Ra=Rn/omega]                                                    | 27432.000 N
+   Interaction ratio for bolt bearing at brace                         | 
+      [Pb/2*Ra]                                                        | 0.638 
+                                                                       | 
+Bolt bearing at gusset check:                                          | 
+   Nominal strength in bolt bearing at gusset (Rn)                     | 138240.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength of bolt bearing at gusset                        | 
+      [Ra=Rn/omega]                                                    | 69120.000 N
+   Interaction ratio for bolt bearing at gusset                        | 
+      [Pb/Ra]                                                          | 0.506 
+                                                                       | 
+Brace rupture check:                                                   | 
+   Net cross-section area of brace (An)                                | 1895.200 mm^2
+   Shear lag factor (U)                                                | 0.827 
+   Effective cross-section area for tension rupture                    | 
+      [Ae=U*An]                                                        | 1567.601 mm^2
+   Nominal strength of brace in tension rupture (Pn)                   | 627040.457 N
+   ASD factor in tension rupture (omega)                               | 2.000 
+   Allowable strength of brace in tension rupture                      | 
+      [Pa=Pn/omega]                                                    | 313520.229 N
+   Interaction ratio in brace rupture                                  | 
+      [P/Pa]                                                           | 0.335 
+                                                                       | 
+Block shear at brace check:                                            | 
+   Gross area in shear                                                 | 2159.000 mm^2
+   Net area in shear                                                   | 1397.000 mm^2
+   Net area in tension                                                 | 468.630 mm^2
+   Nominal strength in block shear at brace (Rn)                       | 511302.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength in block shear at brace                          | 
+      [Ra=Rn/omega]                                                    | 255651.000 N
+   Interaction ratio in block shear at brace                           | 
+      [P/Ra]                                                           | 0.411 
+                                                                       | 
+Gusset tension yielding check:                                         | 
+   Length of Whitmore section                                          | 161.658 mm
+   Gross area of gusset in tension                                     | 2586.529 mm^2
+   Nominal strength of gusset in tension yielding (Pn)                 | 646632.301 N
+   ASD factor in tension yielding (omega)                              | 1.670 
+   Allowable strength of gusset in tension yielding                    | 
+      [Ra=Rn/omega]                                                    | 387204.971 N
+   Interaction ratio in tension yielding of gusset                     | 
+      [P/Pa]                                                           | 0.271 
+                                                                       | 
+Gusset tension rupture check:                                          | 
+   Net area of gusset in tension                                       | 2202.529 mm^2
+   Nominal strength of gusset in tension rupture (Pn)                  | 881011.682 N
+   ASD factor in tension rupture (omega)                               | 2.000 
+   Allowable strength of gusset in tension rupture                     | 
+      [Ra=Rn/omega]                                                    | 440505.841 N
+   Interaction ratio in tension rupture of gusset                      | 
+      [P/Pa]                                                           | 0.238 
+                                                                       | 
+Gusset compression buckling check:                                     | 
+   Buckling lenght at connection centerline (l1)                       | 199.865 mm
+   Buckling lenght at top most point of whitmore section (l2)          | 256.462 mm
+   Buckling length at bottom most point of whitmore section (l3)       | 143.268 mm
+   Average buckling length of gusset plate                             | 
+      [lb=(l1+l2+l3)/3]                                                | 199.865 mm
+   Nominal strength of gusset plate in compression (Pn)                | 560512.909 N
+   ASD factor in compression (omega)                                   | 1.670 
+   Allowable strength of gusset in compression                         | 
+      [Pa=Pn/omega]                                                    | 335636.472 N
+   Interaction ratio in compression of gusset                          | 
+      [P/Pa]                                                           | 0.313 
+                                                                       | 
+UFM forces at gusset interface                                         | 
+------------------------------                                         | 
+   Horizontal force at gusset to column interface (Hc)                 | 0.000 N
+   Vertical force at gusset to column interface (Vc)                   | 40303.803 N
+   Horizontal force at gusset to beam interface (Hb)                   | 64486.084 N
+   Vertical force at gusset to beam interface (Vb)                     | 42560.816 N
+   Moment at gusset to beam interface (Mb)                             | 853202.313 N mm
+                                                                       | 
+Gusset to beam connection checks                                       | 
+--------------------------------                                       | 
+                                                                       | 
+Gusset to beam weld check:                                             | 
+   Required strength of weld (fw)                                      | 121.884 N/mm
+   Nominal strength of weld (fn)                                       | 1635.715 N/mm
+   ASD factor for weld strength (omega)                                | 2.000 
+   Allowable strength of weld                                          | 
+      [fa=fn/omega]                                                    | 817.858 N/mm
+   Interaction ratio for weld                                          | 
+      [fw/fa]                                                          | 0.149 
+                                                                       | 
+Rupture of gusset at weld check:                                       | 
+   Minimum thickness of plate required for rupture (tg`)               | 13.631 mm
+   Interaction ratio for gusset rupture at weld                        | 
+      [tg`/tg]                                                         | 0.852 
+                                                                       | 
+Beam web yielding check:                                               | 
+   Nominal strength in web yielding (Rn)                               | 1430231.250 N
+   ASD factor in web yielding (omega)                                  | 1.500 
+   Allowable strength in web yielding                                  | 
+      [Ra=Rn/omega]                                                    | 953487.500 N
+   Interaction ratio for web yielding                                  | 
+      [(Vb+4*Mb/lg)/Ra]                                                | 0.054 
+                                                                       | 
+Beam web crippling check:                                              | 
+   Nominal strength of beam in web crippling (Rn)                      | 1939224.512 N
+   ASD factor for web crippling (omega)                                | 2.000 
+   Allowable strength of beam in web crippling                         | 
+      [Ra=Rn/omega]                                                    | 969612.256 N
+   Interaction ratio in web crippling                                  | 
+      [(Vb+4*Mb/lg)/Ra]                                                | 0.053 
+                                                                       | 
+Gusset to column connection checks                                     | 
+----------------------------------                                     | 
+   Tension per bolt (without prying)                                   | 
+      [T2=Hc/(2*n2)]                                                   | 0.000 N
+   Shear force per bolt                                                | 
+      [R2=Vc/(2*n2)]                                                   | 6717.300 N
+                                                                       | 
+Bolt shear check:                                                      | 
+   Nominal strength of bolt in shear (Rn)                              | 141427.704 N
+   ASD factor in bolt shear (omega)                                    | 2.000 
+   Allowable strength of bolt in shear                                 | 
+      [Ra=Rn/omega]                                                    | 70713.852 N
+   Interaction ratio in bolt shear                                     | 
+      [R2/Ra]                                                          | 0.095 
+                                                                       | 
+Bolt bearing at clip angle check:                                      | 
+   Nominal strength in bolt bearing at clip angle (Rn)                 | 109728.000 N
+   ASD factor in bolt bearing (omega)                                  | 0.750 
+   Allowable strength in bolt bearing at clip angle                    | 
+      [Ra=Rn/omega]                                                    | 54864.000 N
+   Interaction ratio in bolt bearing at clip angle                     | 
+      [R2/Ra]                                                          | 0.122 
+                                                                       | 
+Bolt bearing at column check:                                          | 
+   Nominal strength in bolt bearing at column (Rn)                     | 230208.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength in bolt bearing at column                        | 
+      [Ra=Rn/omega]                                                    | 115104.000 N
+   Interaction ratio in bolt bearing at column                         | 
+      [R2/Ra]                                                          | 0.058 
+                                                                       | 
+Clip angle shear yielding check:                                       | 
+   Nominal shear yieldind strength of clip angle (Rn)                  | 762000.000 N
+   ASD factor in shear yielding (omega)                                | 1.500 
+   Allowable shear yield strength of clip angle                        | 
+      [Ra=Rn/omega]                                                    | 508000.000 N
+   Interaction ratio in clip shear yielding                            | 
+      [sqrt(Hc^2+Vc^2)/Ra]                                             | 0.079 
+                                                                       | 
+Clip angle shear rupture check:                                        | 
+   Nominal shear rupture strength of clip angle (Rn)                   | 780288.000 N
+   ASD factor in shear yielding (omega)                                | 2.000 
+   Allowable shear rupture strength of clip angle                      | 
+      [Ra=Rn/omega]                                                    | 390144.000 N
+   Interaction ratio in clip shear rupture                             | 
+      [sqrt(Hc^2+Vc^2)/Ra]                                             | 0.103 
+                                                                       | 
+Block shear at clip angle check:                                       | 
+   Gross area in shear                                                 | 4318.000 mm^2
+   Net area in shear                                                   | 2794.000 mm^2
+   Net area in tension                                                 | 759.460 mm^2
+   Nominal strength in block shear at clip angle (Rn)                  | 951484.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength in block shear at clip angle                     | 
+      [Ra=Rn/omega]                                                    | 475742.000 N
+   Interaction ratio in block shear at clip angle                      | 
+      [Vc/Ra]                                                          | 0.085 
+                                                                       | 
+Bolt tension check (without prying):                                   | 
+   Nominal strength of bolt in tension (Rn)                            | 235562.800 N
+   ASD factor in bolt tension (omega)                                  | 2.000 
+   Allowable strength of bolt in tension                               | 
+      [B=Rn/omega]                                                     | 117781.400 N
+   Interaction ratio in bolt tension                                   | 
+      [T2/B]                                                           | 0.000 
+                                                                       | 
+Clip angle prying action check:                                        | 
+   Bolt strength reduction factor due to clip prying (Q)               | 0.321 
+   Interaction ratio in clip prying                                    | 
+      [T2/(Q*B)]                                                       | 0.000 
+                                                                       | 
+Weld check:                                                            | 
+   Polar moment of inertia of weld group                               | 2075343.516 mm^3
+   Maximum stress in weld (fw)                                         | 111.902 N/mm
+   Nominal strength of weld (fn)                                       | 1635.715 N/mm
+   ASD factor for weld strength (omega)                                | 2.000 
+   Allowable strength of weld                                          | 
+      [fa=fn/omega]                                                    | 817.858 N/mm
+   Interaction ratio in weld strength                                  | 
+      [fw/fa]                                                          | 0.137 
+                                                                       | 
+Gusset rupture at weld check:                                          | 
+   Nominal strength of gusset in rupture at weld (fn)                  | 3840.000 N/mm
+   ASD factor for rupture (omega)                                      | 2.000 
+   Allowable strength of gusset in rupture at weld                     | 
+      [fa=fn/omega]                                                    | 1920.000 N/mm
+   Interaction ratio in gusset rupture at weld                         | 
+      [2*fw/fa]                                                        | 0.117 
+                                                                       | 
+Beam to column connection checks                                       | 
+--------------------------------                                       | 
+   Tension per bolt (without prying)                                   | 
+      [T1=(Tf+Hc)/(2*n1)]                                              | 20000.000 N
+   Shear force per bolt                                                | 
+      [R1=(Rb+Vb)/(2*n1)]                                              | 34390.204 N
+                                                                       | 
+Bolt shear check:                                                      | 
+   Nominal strength of bolt in shear (Rn)                              | 141427.704 N
+   ASD factor in bolt shear (omega)                                    | 2.000 
+   Allowable strength of bolt in shear                                 | 
+      [Ra=Rn/omega]                                                    | 70713.852 N
+   Interaction ratio in bolt shear                                     | 
+      [R1/Ra]                                                          | 0.486 
+                                                                       | 
+Bolt bearing at clip angle check:                                      | 
+   Nominal strength in bolt bearing at clip angle (Rn)                 | 109728.000 N
+   ASD factor in bolt bearing (omega)                                  | 0.750 
+   Allowable strength in bolt bearing at clip angle                    | 
+      [Ra=Rn/omega]                                                    | 54864.000 N
+   Interaction ratio in bolt bearing at clip angle                     | 
+      [R1/Ra]                                                          | 0.627 
+                                                                       | 
+Bolt bearing at column check:                                          | 
+   Nominal strength in bolt bearing at column (Rn)                     | 230208.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength in bolt bearing at column                        | 
+      [Ra=Rn/omega]                                                    | 115104.000 N
+   Interaction ratio in bolt bearing at column                         | 
+      [R1/Ra]                                                          | 0.299 
+                                                                       | 
+Clip angle shear yielding check:                                       | 
+   Nominal shear yieldind strength of clip angle (Rn)                  | 495300.000 N
+   ASD factor in shear yielding (omega)                                | 1.500 
+   Allowable shear yield strength of clip angle                        | 
+      [Ra=Rn/omega]                                                    | 330200.000 N
+   Interaction ratio in clip shear yielding                            | 
+      [sqrt((Hc+Tf)^2+(Vb+Rb)^2)/Ra]                                   | 0.482 
+                                                                       | 
+Clip angle shear rupture check:                                        | 
+   Nominal shear rupture strength of clip angle (Rn)                   | 499872.000 N
+   ASD factor in shear yielding (omega)                                | 2.000 
+   Allowable shear rupture strength of clip angle                      | 
+      [Ra=Rn/omega]                                                    | 249936.000 N
+   Interaction ratio in clip shear rupture                             | 
+      [sqrt((Hc+Tf)^2+(Vb+Rb)^2)/Ra]                                   | 0.637 
+                                                                       | 
+Block shear at clip angle check:                                       | 
+   Gross area in shear                                                 | 2540.000 mm^2
+   Net area in shear                                                   | 1625.600 mm^2
+   Net area in tension                                                 | 707.390 mm^2
+   Nominal strength in block shear at clip angle (Rn)                  | 663956.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength in block shear at clip angle                     | 
+      [Ra=Rn/omega]                                                    | 331978.000 N
+   Interaction ratio in block shear at clip angle                      | 
+      [(Rb+Vb)/Ra]                                                     | 0.414 
+                                                                       | 
+Bolt tension check (without prying):                                   | 
+   Nominal strength of bolt in tension (Rn)                            | 191597.627 N
+   ASD factor in bolt tension (omega)                                  | 2.000 
+   Allowable strength of bolt in tension                               | 
+      [B=Rn/omega]                                                     | 95798.814 N
+   Interaction ratio in bolt tension                                   | 
+      [T1/B]                                                           | 0.209 
+                                                                       | 
+Clip angle prying action check:                                        | 
+   Bolt strength reduction factor due to clip prying (Q)               | 0.369 
+   Interaction ratio in clip prying                                    | 
+      [T1/(Q*B)]                                                       | 0.566 
+                                                                       | 
+Weld check:                                                            | 
+   Polar moment of inertia of weld group                               | 836236.815 mm^3
+   Maximum stress in weld (fw)                                         | 694.799 N/mm
+   Nominal strength of weld (fn)                                       | 1635.715 N/mm
+   ASD factor for weld strength (omega)                                | 2.000 
+   Allowable strength of weld                                          | 
+      [fa=fn/omega]                                                    | 817.858 N/mm
+   Interaction ratio in weld strength                                  | 
+      [fw/fa]                                                          | 0.850 
+                                                                       | 
+Beam rupture at weld check:                                            | 
+   Nominal strength of beam web in rupture at weld (fn)                | 2856.000 N/mm
+   ASD factor for rupture (omega)                                      | 2.000 
+   Allowable strength of beam web in rupture at weld                   | 
+      [fa=fn/omega]                                                    | 1428.000 N/mm
+   Interaction ratio in rupture of beam web at weld                    | 
+      [2*fw/fa]                                                        | 0.973 

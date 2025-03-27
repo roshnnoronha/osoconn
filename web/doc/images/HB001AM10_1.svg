@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="37cm" height="12cm" viewBox="338 75 734 228" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="420" y="240">
+    <tspan x="420" y="240">Clip angle</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="339.824" y1="184.331" x2="441.402" y2="184.411"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="340" y1="80" x2="441.08" y2="80.0274"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="388.508" y1="90.6428" x2="388.508" y2="174.643"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="392.508" y1="90.6428" x2="392.508" y2="174.643"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="341.174" y1="84.759" x2="380.508" y2="84.6428"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="400.184" y1="84.8048" x2="440" y2="84"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 388.508,90.6428 A 7.25,7.25 0 0 0 380.508,84.6428"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 400.508,84.6428 A 7.25,7.25 0 0 0 392.508,90.6428"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="339.692" y1="180.663" x2="380.508" y2="180.643"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="399.962" y1="180.575" x2="441.128" y2="180.663"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 380.508,180.643 A 7.25,7.25 0 0 0 388.508,174.643"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 392.508,174.643 A 7.25,7.25 0 0 0 400.508,180.643"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="340.508" y1="180.643" x2="340.508" y2="184.643"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="440.508" y1="180.643" x2="440.508" y2="184.643"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="340.508" y1="79.8718" x2="340.418" y2="85.2146"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="440.508" y1="80.6428" x2="440.508" y2="84.6428"/>
+  <g>
+    <rect style="fill: #ffffff" x="392.508" y="132" width="137.492" height="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="392.508" y="132" width="137.492" height="4"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="396" y1="96" x2="396" y2="122"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="396" y1="146" x2="396" y2="172"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="424" y1="128" x2="402" y2="128"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="424" y1="140" x2="402" y2="140"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 396,122 A 7.07107,7.07107 0 0 0 402,128"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 402,140 A 7.07107,7.07107 0 0 0 396,146"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="424" y1="136" x2="424" y2="140"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="424" y1="128" x2="424" y2="132"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="396" y1="172" x2="392" y2="172"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="396" y1="96" x2="392" y2="96"/>
+  <g>
+    <rect style="fill: #000000" x="388" y="108" width="8" height="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="388" y="108" width="8" height="4"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="388" y="156" width="8" height="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="388" y="156" width="8" height="4"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="680" y="240">
+    <tspan x="680" y="240">Shear tab</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="603.762" y1="180.852" x2="705.34" y2="180.932"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="603.938" y1="76.5212" x2="705.018" y2="76.5486"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="652.446" y1="87.164" x2="652.446" y2="171.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="656.446" y1="87.164" x2="656.446" y2="171.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="605.112" y1="81.2802" x2="644.446" y2="81.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="664.122" y1="81.326" x2="703.938" y2="80.5212"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 652.446,87.164 A 7.25,7.25 0 0 0 644.446,81.164"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 664.446,81.164 A 7.25,7.25 0 0 0 656.446,87.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="603.63" y1="177.184" x2="644.446" y2="177.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="663.9" y1="177.096" x2="705.066" y2="177.184"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 644.446,177.164 A 7.25,7.25 0 0 0 652.446,171.164"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 656.446,171.164 A 7.25,7.25 0 0 0 664.446,177.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="603.446" y1="177.164" x2="603.446" y2="181.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="704.446" y1="177.164" x2="704.446" y2="181.164"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="603.446" y1="76.393" x2="603.356" y2="81.7358"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="704.446" y1="77.164" x2="704.446" y2="81.164"/>
+  <g>
+    <rect style="fill: #ffffff" x="661.938" y="128.521" width="132" height="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="661.938" y="128.521" width="132" height="4"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="657.938" y="122.521" width="52" height="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="657.938" y="122.521" width="52" height="4"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="685.938" y="122.521" width="6" height="10"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="685.938" y="122.521" width="6" height="10"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="940" y="240">
+    <tspan x="940" y="240">Beam flange</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="883.4" y1="183.184" x2="984.978" y2="183.264"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="883.576" y1="78.8527" x2="984.656" y2="78.8801"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="932.084" y1="89.4955" x2="932.084" y2="173.496"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="936.084" y1="89.4955" x2="936.084" y2="173.496"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="884.75" y1="83.6117" x2="924.084" y2="83.4955"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="943.76" y1="83.6575" x2="983.576" y2="82.8527"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 932.084,89.4955 A 7.25,7.25 0 0 0 924.084,83.4955"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 944.084,83.4955 A 7.25,7.25 0 0 0 936.084,89.4955"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="883.268" y1="179.516" x2="924.084" y2="179.496"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="943.538" y1="179.428" x2="984.704" y2="179.516"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 924.084,179.496 A 7.25,7.25 0 0 0 932.084,173.496"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 936.084,173.496 A 7.25,7.25 0 0 0 944.084,179.496"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="884.084" y1="179.496" x2="884.084" y2="183.496"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="984.084" y1="179.496" x2="984.084" y2="183.496"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="884.084" y1="78.7245" x2="883.994" y2="84.0673"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="984.084" y1="79.4955" x2="984.084" y2="83.4955"/>
+  <g>
+    <rect style="fill: #ffffff" x="933.576" y="183.853" width="137.492" height="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="933.576" y="183.853" width="137.492" height="4"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="961.576" y="179.501" width="4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="961.576" y="179.501" width="4" height="8"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="580" y="300">
+    <tspan x="580" y="300">HB001AM10 Gusset to Beam Connection Types</tspan>
+  </text>
+</svg>

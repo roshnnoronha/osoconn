@@ -1,0 +1,162 @@
+Osoconn v1.1
+Connection code : SC001AM10
+Connection ID : SC001_5
+-----------------------------------------------------------------------+---------------------
+Design Summary                                                         | 
+-----------------------------------------------------------------------+---------------------
+   Connection is OK                                                    |  
+   Maximum utility ratio for connection                                | 0.785 
+-----------------------------------------------------------------------+---------------------
+Design Inputs                                                          | 
+-----------------------------------------------------------------------+---------------------
+   Design method                                                       | ASD 
+   Young's modulus of elasticity                                       | 29000.000 ksi
+   Poisson's ratio                                                     | 0.300 
+                                                                       | 
+Connection forces:                                                     | 
+   Transfer force (TF)                                                 | 50.000 kip
+   Shear force (SF)                                                    | 65.000 kip
+                                                                       | 
+Bolt Details:                                                          | 
+   Bolt Diameter                                                       | 0.875 in
+   Number of bolts per clip angle (n)                                  | 6.000 
+   Bolt Gage                                                           | 5.500 in
+   Bolt Spacing                                                        | 2.625 in
+   Nominal tensile capacity of bolt                                    | 90.000 ksi
+   Nominal shear capacity of bolt                                      | 54.000 ksi
+                                                                       | 
+Weld Details:                                                          | 
+   Weld thickness                                                      | 0.313 in
+   Weld tensile strength                                               | 70.000 ksi
+                                                                       | 
+Clip angle dimensions:                                                 | 
+   Clip angle  size (li x lo x ta)                                     | 3.5x4x0.5 in
+   Clip angle length                                                   | 15.750 in
+   Yield strength of clip angle                                        | 36.000 ksi
+   Tensile strenght of clip angle                                      | 58.000 ksi
+                                                                       | 
+Connecting beam properties:                                            | 
+   Section size                                                        | W21X122 
+      Depth                                                            | 21.700 in
+      Flange width                                                     | 12.400 in
+      Flange thickness                                                 | 0.960 in
+      Web thickness (tw)                                               | 0.600 in
+   Yield strength of beam                                              | 50.000 ksi
+   Tensile strength of beam                                            | 65.000 ksi
+   Beam setback from connection member (s)                             | 0.500 in
+                                                                       | 
+Supporting member properties:                                          | 
+   Support type                                                        | Column Flange 
+   Section size                                                        | W14X120 
+      Depth                                                            | 14.500 in
+      Flange width                                                     | 14.700 in
+      Flange thickness                                                 | 0.940 in
+      Web thickness                                                    | 0.590 in
+   Yield strength of support                                           | 50.000 ksi
+   Tensile strength of support                                         | 65.000 ksi
+-----------------------------------------------------------------------+---------------------
+Design Calculations                                                    | 
+-----------------------------------------------------------------------+---------------------
+                                                                       | 
+Bolt Shear Check:                                                      | 
+   Shear per bolt                                                      | 
+      [Vb=SF/(2*n)]                                                    | 5.417 kip
+   Nominal shear strength of bolt (Rn)                                 | 11.346 kip
+   ASD factor in bolt shear (omega)                                    | 1.500 
+   Allowable shear strength of bolt                                    | 
+      [Ra=Rn/omega]                                                    | 7.564 kip
+   Interaction ratio in bolt shear                                     | 
+      [Vb/Ra]                                                          | 0.716 
+                                                                       | 
+Bolt Tension Check (without prying:                                    | 
+   Tension per bolt without prying                                     | 
+      [Tb=TF/(2*n)]                                                    | 4.167 kip
+   Nominal bolt strength in tension (Rn)                               | 54.091 kip
+   ASD factor in bolt tension (omega)                                  | 2.000 
+   Allowable bolt strength in tension                                  | 
+      [B=Rn/omega]                                                     | 27.046 kip
+   Interaction ratio in bolt tension                                   | 
+      [Tb/B]                                                           | 0.154 
+                                                                       | 
+Bolt Bearing at Clip Angle Check:                                      | 
+   Nominal strength in bearing at clip angle (Rn)                      | 29.362 kip
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength in bearing at clip angle                         | 
+      [Ra=Rn/omega]                                                    | 14.681 kip
+   Interaction ratio in bearing at clip angle                          | 
+      [Vb/Ra]                                                          | 0.369 
+                                                                       | 
+Bolt Bearing at Support Check:                                         | 
+   Nominal strength in bearing at support (Rn)                         | 123.727 kip
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Allowable strength in bearing at support                            | 
+      [Ra=Rn/omega]                                                    | 61.864 kip
+   Strength reduction factor to account for backing beam (r)           | 1.000 
+   Interaction ratio in bearing at support                             | 
+      [Vb/(Ra*r)]                                                      | 0.088 
+                                                                       | 
+Clip Angle Shear Yielding Check:                                       | 
+   Shear in clip angle                                                 | 
+      [Va=sqrt(TF^2+SF^2)/2]                                           | 41.003 kip
+   Nominal shear yeilding strength of clip angle (Rn)                  | 170.100 kip
+   ASD factor for shear yielding (omega)                               | 1.500 
+   Allowable shear yielding strength of clip angle                     | 
+      [Ra=Rn/omega]                                                    | 113.400 kip
+   Interaction ratio in shear yielding                                 | 
+      [Va/Ra]                                                          | 0.362 
+                                                                       | 
+Clip Angle Shear Rupture Check:                                        | 
+   Nominal shear rupture strength of clip angle (Rn)                   | 176.175 kip
+   ASD factor for shear rupture (omega)                                | 2.000 
+   Shear rupture strength of clip angle                                | 
+      [Ra=Rn/omega]                                                    | 88.087 kip
+   Interaction ratio in shear rupture                                  | 
+      [Va/Ra]                                                          | 0.465 
+                                                                       | 
+Clip Angle Block Shear Check:                                          | 
+   Nominal block shear strength of clip angle (Rn)                     | 343.206 kip
+   ASD factor for block shear (omega)                                  | 2.000 
+   Block shear strength of clip angle                                  | 
+      [Ra=Rn/omega]                                                    | 171.603 kip
+   Interaction ratio in block shear                                    | 
+      [SF/Ra]                                                          | 0.379 
+                                                                       | 
+Clip angle prying action check:                                        | 
+   Bolt strength reduction factor due to clip prying (Q)               | 0.196 
+   Interaction ratio in clip prying                                    | 
+      [Tb/(Q*B)]                                                       | 0.785 
+                                                                       | 
+Column flange prying action check:                                     | 
+   Bolt strength reduction factor due to column flange prying (Q)      | 0.894 
+   Interaction ratio in column flange prying                           | 
+      [Tb/(Q*B)]                                                       | 0.172 
+                                                                       | 
+Weld Check:                                                            | 
+   Maximum stress in weld group (fw)                                   | 2.925 kip/in
+   Nominal strength of weld (Rn)                                       | 9.294 kip/in
+   ASD factor for weld (omega)                                         | 2.000 
+   Allowable weld strength                                             | 
+      [Ra=Rn/omega]                                                    | 4.647 kip/in
+   Interaction ratio for weld                                          | 
+      [fw/Ra]                                                          | 0.629 
+                                                                       | 
+Web Rupture at Weld Check:                                             | 
+   Minimum thickness of web at weld (tw`)                              | 0.300 in
+   Interaction ratio in rupture at weld                                | 
+      [tw`/tw]                                                         | 0.500 
+                                                                       | 
+Column web yielding check:                                             | 
+   Nominal strength of column web yielding (Rn)                        | 578.200 kip
+   ASD factor in web yielding (omega)                                  | 1.500 
+   Allowable strength of column in web yielding                        | 
+      [Ra=Rn/omega]                                                    | 385.467 kip
+   Interaction ratio in column web yielding                            | 
+      [TF/Ra]                                                          | 0.130 
+                                                                       | 
+Column web crippling check:                                            | 
+   Nominal strength of column in web crippling (Rn)                    | 647.827 kip
+   ASD factor in web crippling (omega)                                 | 2.000 
+   Allowable strength of column in web crippling                       | 
+      [Ra=Rn/omega]                                                    | 323.914 kip
+   Interaction ratio in column web crippling                           | 
+      [TF/Ra]                                                          | 0.154 

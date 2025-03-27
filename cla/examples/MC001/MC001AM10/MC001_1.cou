@@ -1,0 +1,223 @@
+Osoconn v1.1
+Connection code : MC001AM10
+Connection ID : MC001_1
+-----------------------------------------------------------------------+---------------------
+Design Summary                                                         | 
+-----------------------------------------------------------------------+---------------------
+   Connection is OK                                                    |  
+   Maximum interaction ratio                                           | 0.972 
+-----------------------------------------------------------------------+---------------------
+Design Inputs                                                          | 
+-----------------------------------------------------------------------+---------------------
+   Extended plate moment connection configuration                      | 4 BOLT - UNSTIFFENED 
+   Design method                                                       | LRFD 
+   Shear force in connection (V)                                       | 35.000 kip
+   Column axial force                                                  | 150.000 kip
+   Modulus of elasticity of steel                                      | 29000.000 ksi
+   Yield strength of beam (Fyb)                                        | 36.000 ksi
+   Tensile strength of beam                                            | 58.000 ksi
+   Yield strength of column                                            | 36.000 ksi
+   Tensile strength of column                                          | 58.000 ksi
+   Yield strength of plate                                             | 36.000 ksi
+   Tensile strength of plate                                           | 58.000 ksi
+   Tensile strength of weld                                            | 70.000 ksi
+   Material overstrength factor for beam (Ry)                          | 1.500 
+   End plate dimensions (b x d x tp)                                   | 12 x 22 x 1 in
+   Bolt diamter                                                        | 1.125 in
+   Bolt grade                                                          | ASTM A325 
+   Thickness of beam web to plate fillet weld                          | 0.250 in
+   Thickness of flange weld reinforing fillet weld                     | 0.160 in
+   Beam section property                                               | W14X30 
+      Depth (d)                                                        | 13.800 in
+      Flange width                                                     | 6.730 in
+      Web thickness                                                    | 0.270 in
+      Flange thickness (tf)                                            | 0.385 in
+      Fillet dimension                                                 | 0.785 in
+      Plastic section modulus (Zx)                                     | 47.300 in^3
+   Column section property                                             | W16X100 
+      Depth                                                            | 17.000 in
+      Flange width                                                     | 10.400 in
+      Web thickness                                                    | 0.585 in
+      Flange thickness                                                 | 0.985 in
+      Fillet dimension                                                 | 1.390 in
+   Thickness of column stiffener (tsc)                                 | 1.000 in
+   Width of column stiffener                                           | 4.000 in
+   Column stiffener clip dimension                                     | 1.000 in
+   Column stiffener to flange weld                                     | 0.500 in
+   Column stiffener to web weld                                        | 0.250 in
+-----------------------------------------------------------------------+---------------------
+Design calculations                                                    | 
+-----------------------------------------------------------------------+---------------------
+                                                                       | 
+Connection design forces:                                              | 
+   Required plastic moment capacity of beam                            | 
+      [Mpe=1.1*Ry*Fyb*Zx]                                              | 2809.620 kip in
+   Distance from the face of the column to the plastic hinge (Lp)      | 6.900 in
+   Required moment capacity of connection                              | 
+      [Muc=Mpe+V*Lp]                                                   | 3051.120 kip in
+   Flange force                                                        | 
+      [Fu=Muc/(d-tf)]                                                  | 227.441 kip
+                                                                       | 
+Bolt Tension check:                                                    | 
+   Distance of the centerline of the beam compression flange to the    |  
+      1st tension bolt row (h0)                                        | 15.357 in
+      2nd tension bolt row (h1)                                        | 11.665 in
+   Bolt nominal tensile stress                                         | 90.000 ksi
+   Required bolt diameter                                              | 
+      [db`=sqrt(2*Muc/(PI*phi_bv*Fnt*(h0+h1)))]                        | 1.032 in
+   Interaction ratio in bolt tension                                   | 
+      [db`/db]                                                         | 0.917 
+                                                                       | 
+Bolt Shear Rupture Check:                                              | 
+   Number of bolts provided at compression flange (nc)                 | 4.000 
+   Nominal shear strength of bolt (Vb)                                 | 53.684 kip
+   Nominal shear strength of connectionType                            | 
+      [Rn=nc*Vb]                                                       | 214.736 kip
+   LRFD factor in bolt shear (phi)                                     | 0.750 
+   Bolt shear capacity                                                 | 
+      [Ra=Rn*phi]                                                      | 161.052 kip
+   Interaction ratio in bolt shear                                     | 
+      [Vu/Ra]                                                          | 0.217 
+                                                                       | 
+Bolt Bearing on Plate:                                                 | 
+   Nominal strength in bolt bearing on plate (Rn)                      | 557.670 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Bolt bearing on plate capacity                                      | 
+      [Ra=Rn*phi]                                                      | 418.252 kip
+   Interaction ratio in bolt bearing on plate                          | 
+      [Vu/Ra]                                                          | 0.084 
+                                                                       | 
+Bolt Bearing on Column Flange:                                         | 
+   Nominal strength in bolt bearing on flange (Rn)                     | 398.482 kip
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Bolt bearing on flange capacity                                     | 
+      [Ra=Rn*phi]                                                      | 298.861 kip
+   Interaction ratio in bolt bearing on flange                         | 
+      [Vu/Ra]                                                          | 0.117 
+                                                                       | 
+Plate Thickness Calculation:                                           | 
+   Bolt tensile strength (Pt)                                          | 89.416 kip
+   No prying design moment                                             | 
+      [Mnp= 2*Pt*(h0+h1)]                                              | 4832.510 kip in
+   LRFD factor in bolt rupture (phi)                                   | 0.750 
+   LRFD factor in bending (phi_b)                                      | 0.900 
+   Yield line parameter for plate (Yp)                                 | 131.532 in
+   Required minimum plate thickness                                    | 
+      [tp`=sqrt(1.11*phi*Mnp/(phi_b*Fyp*Yp))]                          | 0.972 in
+   Interaction ratio for plate thickness                               | 
+      [tp`/tp]                                                         | 0.972 
+                                                                       | 
+Plate Shear Yielding Check:                                            | 
+   Gross shear area of plate                                           | 12.000 in^2
+   Nominal strength in shear yielding (Rn)                             | 259.200 kip
+   LRFD factor in shear yielding (phi)                                 | 1.000 
+   Shear yielding capacity of plate                                    | 
+      [Ra=Rn*phi]                                                      | 259.200 kip
+   Interaction ratio in shear yielding                                 | 
+      [Fu/(2*Ra)]                                                      | 0.439 
+                                                                       | 
+Plate Shear Rupture Check:                                             | 
+   Net shear area of plate                                             | 9.625 in^2
+   Nominal strength in shear rupture (Rn)                              | 334.950 kip
+   LRFD factor in shear rupture (phi)                                  | 0.750 
+   Shear rupture capacity of plate                                     | 
+      [Ra=Rn*phi]                                                      | 251.212 kip
+   Interaction ratio in shear rupture                                  | 
+      [Fu/(2*Ra)]                                                      | 0.453 
+                                                                       | 
+Beam Web to End Plate Weld Tension Check:                              | 
+   Required tension strength of weld at beam web (fw)                  | 9.720 kip/in
+   Nominal strength of weld at beam web (fn)                           | 22.270 kip/in
+   LRFD factor for weld (phi)                                          | 0.750 
+   Beam web weld capacity                                              | 
+      [fa=fn*phi]                                                      | 16.703 kip/in
+   Interaction ratio for beam web weld in tension                      | 
+      [fw/fa]                                                          | 0.582 
+                                                                       | 
+Beam Web to End Plate Weld Shear Check:                                | 
+   Total weld length                                                   | 9.760 in
+   Nominal strength of weld at beam web (Rn)                           | 72.453 kip
+   LRFD factor for weld (phi)                                          | 0.750 
+   Beam web weld capacity                                              | 
+      [Ra=Rn*phi]                                                      | 54.340 kip
+   Interaction ratio for beam web weld in shear                        | 
+      [Vu/Ra]                                                          | 0.644 
+                                                                       | 
+Column Flange Yielding Check:                                          | 
+   Column yield line parameter (Yc)                                    | 185.904 in
+   LRFD factor in bolt rupture (phi)                                   | 0.750 
+   LRFD factor in flexure (phi_b)                                      | 0.900 
+   Required minimum column flange thickness                            | 
+      [tf`=sqrt(1.11*phi*Mnp/(phi_b*Fyc*Yc))]                          | 0.817 in
+   Interaction ratio for column flange yielding                        | 
+      [ratio=tf`/tf]                                                   | 0.830 
+                                                                       | 
+Column Web Yielding Check:                                             | 
+   Bearing length                                                      | 
+      [N=tf+2*wb]                                                      | 0.705 in
+   Nominal strength of column web in local yielding (Rn)               | 123.727 kip
+   LRFD factor in local web yielding (phi)                             | 1.000 
+   Column local web yielding capacity                                  | 
+      [Ra=Rn*phi]                                                      | 123.727 kip
+   Interaction ratio in web local yielding                             | 
+      [Fu/Ra]                                                          | 0.000 
+                                                                       | 
+Column Local Web Crippling Check:                                      | 
+   Nominal strength in column web crippling (Rn)                       | 191.829 kip
+   LRFD factor in web crippling (phi)                                  | 0.750 
+   Column web crippling capacity                                       | 
+      [Ra=Rn*phi]                                                      | 143.872 kip
+   Interaction ratio in web crippling                                  | 
+      [Fu/Ra]                                                          | 0.000 
+                                                                       | 
+Column Panel Shear Check:                                              | 
+   Nominal strength of column in panel shear                           | 262.193 kip
+   LRFD factor for column panel shear (phi)                            | 0.900 
+   Column panel shear capacity                                         | 
+      [Ra=Rn*phi]                                                      | 235.973 kip
+   Interaction ratio for column panel shear                            | 
+      [Fu/Ra]                                                          | 0.964 
+                                                                       | 
+Column Web Shear Buckling Check:                                       | 
+   Minimum thickness of web to prevent shear buckling (tw`)            | 0.316 in
+   Interaction ratio for thickness of web                              | 
+      [tw`/tw]                                                         | 0.540 
+                                                                       | 
+Transverse Stiffener Axial Strength:                                   | 
+   Required strength of column stiffener (Ru)                          | 103.713 kip
+   Nominal yield strength of stiffener (Rn)                            | 108.000 kip
+   LRFD factor in axial strength (phi)                                 | 0.900 
+   Stiffener axial yield capacity                                      | 
+      [Ra=Rn*phi]                                                      | 97.200 kip
+   Interaction ratio for stiffener in axial strength                   | 
+      [Ru/Ra]                                                          | 0.534 
+                                                                       | 
+Transverse stiffener shear strength:                                   | 
+   Nominal shear strength of stiffener (Rn)                            | 281.448 kip
+   LRFD factor in stiffener shear strength (phi)                       | 0.900 
+   Stiffener shear capacity                                            | 
+      [Ra=Rn*phi]                                                      | 253.303 kip
+   Interaction ratio for stiffener in shear                            | 
+      [Ru/(2*Ra)]                                                      | 0.205 
+                                                                       | 
+Transverse Stiffener Thickness Check:                                  | 
+   Minimum required thickness of stiffener (tsc`)                      | 0.253 in
+   Interaction ratio for stiffener thickness                           | 
+      [tsc`/tsc]                                                       | 0.253 
+                                                                       | 
+Transverse Stiffener to Flange Weld Check:                             | 
+   Required strength for stifferner to flange weld (Ps)                | 32.400 kip/in
+   Nominal strength of stiffener to flange weld (Rn)                   | 44.541 kip/in
+   LRFD factor for weld strength (phi)                                 | 0.750 
+   Stiffener to flange weld capacity                                   | 
+      [Ra=Rn*phi]                                                      | 33.406 kip
+   Interaction ratio for stiffener to flange weld                      | 
+      [Ps/Ra]                                                          | 0.970 
+                                                                       | 
+Transverse Stiffener to Web Weld Check:                                | 
+   Nominal strength of stiffener to web weld (Rn)                      | 193.456 kip/in
+   LRFD factor for weld strength (phi)                                 | 0.750 
+   Stiffener to web weld capacity                                      | 
+      [Ra=Rn*phi]                                                      | 145.092 kip/in
+   Interaction ratio for stiffener to web weld                         | 
+      [Ru/(2*Ra)]                                                      | 0.357 

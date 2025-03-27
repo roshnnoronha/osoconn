@@ -1,0 +1,2 @@
+#define osoconn_VERSION_MAJOR @osoconn_VERSION_MAJOR@
+#define osoconn_VERSION_MINOR @osoconn_VERSION_MINOR@

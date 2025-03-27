@@ -1,0 +1,812 @@
+[
+    {
+        "tab_name":"General",
+        "tab_caption":"General",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"conn_id",
+                "type":"text",
+                "caption":"Connection ID",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"",
+                "required":"false",
+                "enabled":"true",
+                "para":"CONNECTION_ID"
+            },
+           {
+                "name":"units",
+                "type":"select",
+                "caption":"Unit system",
+                "value_list":["NEWTON_MM","KIP_IN"],
+                "item_list":["Newton,mm","Kip,in"],
+                "value":"NEWTON_MM",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"UNITS"
+            }
+        ]
+    },
+    { 
+        "tab_name":"Forces",
+        "tab_caption":"Forces",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"method",
+                "type":"select",
+                "caption":"Design method",
+                "value_list":["ASD","LRFD"],
+                "item_list":["ASD","LRFD"],
+                "value":"ASD",
+                "unit_type":"", 
+                "required":"true",
+                "enabled":"true",
+                "para":"METHOD"
+            },
+            {
+                "name":"brace_force",
+                "type":"number",
+                "caption":"Brace force",
+                "value_list":[],
+                "item_list":[],
+                "value":"0",
+                "unit_type":"force",
+                "required":"true",
+                "enabled":"true",
+               "para":"BRACE_FORCE" 
+            }
+        ]
+    },
+    { 
+        "tab_name":"Materials",
+        "tab_caption":"Materials",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"angle_grade",
+                "type":"select",
+                "caption":"Angle grade",
+                "value_list":["A36","A992"],
+                "item_list":["ASTM A36","ASTM A992"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"ANGLE_GRADE"
+            },
+            {
+                "name":"beam_grade",
+                "type":"select",
+                "caption":"Beam grade",
+                "value_list":["A36","A992"],
+                "item_list":["ASTM A36","ASTM A992"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"BEAM_GRADE"
+            },
+            {
+                "name":"plate_grade",
+                "type":"select",
+                "caption":"Plate grade",
+                "value_list":["A36"],
+                "item_list":["ASTM A36"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"PLATE_GRADE" 
+            },
+            {
+                "name":"weld_grade",
+                "type":"select",
+                "caption":"Weld grade",
+                "value_list":["E70"],
+                "item_list":["E70"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"WELD_ELECTRODE" 
+            },
+            {
+                "name":"bolt_grade",
+                "type":"select",
+                "caption":"Bolt grade",
+                "value_list":["A325","A490"],
+                "item_list":["ASTM F3125 A325","ASTM F3125 A490"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"BOLT_GRADE"
+            }
+        ]
+    },
+    { 
+        "tab_name":"Geometry",
+        "tab_caption":"Geometry",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"brace_section",
+                "type":"select",
+                "caption":"Brace section",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"angles",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BRACE_SECTION" 
+            },
+            {
+                "name":"brace_angle",
+                "type":"number",
+                "caption":"Angle of brace from connection1 (a)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BRACE_ANGLE" 
+            },
+            {
+                "name":"brace_orientation",
+                "type":"select",
+                "caption":"Orientation of double angle",
+                "value_list":["HORIZONTAL","VERTICAL"],
+                "item_list":["Back to back legs horizontal","Back to back legs vertical"],
+                "data_type":"",
+                "value":"HORIZONTAL",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BACK_TO_BACK_LEG_ORIENTATION" 
+            },
+            {
+                "name":"brace_oustanding_leg",
+                "type":"select",
+                "caption":"Brace outstanding leg",
+                "value_list":["LONG_LEG","SHORT_LEG"],
+                "item_list":["Long leg","Short leg"],
+                "data_type":"",
+                "value":"LONG_LEG",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BRACE_OUTSTANDING_LEG" 
+            },
+            {
+                "name":"brace_spacing",
+                "type":"number",
+                "caption":"Brace to brace spacing (sb)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BRACE_ANGLE_SPACING" 
+            },
+            {
+                "name":"joint_type",
+                "type":"select",
+                "caption":"Joint type",
+                "value_list":["BEAM_JOINT","COLUMN_JOINT"],
+                "item_list":["Beam to beam joint","Beam to column joint"],
+                "data_type":"",
+                "value":"BEAM_JOINT",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"JOINT_TYPE" 
+            },
+            {
+                "name":"beam_section_1",
+                "type":"select",
+                "caption":"Beam 1",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"w_sections",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BEAM1_SECTION" 
+            },
+            {
+                "name":"beam_section_2",
+                "type":"select",
+                "caption":"Beam 2",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"w_sections",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BEAM2_SECTION" 
+            },
+            {
+                "name":"continuous_beam_no",
+                "type":"select",
+                "caption":"Continuous beam (beam joints)",
+                "value_list":["1","2"],
+                "item_list":["Beam 1","Beam 2"],
+                "data_type":"",
+                "value":"1",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONTINUOUS_BEAM_NUMBER" 
+            },
+            {
+                "name":"beam_1_setback",
+                "type":"number",
+                "caption":"Setback of beam 1 (sb1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BEAM1_SETBACK" 
+            },
+            {
+                "name":"beam_2_setback",
+                "type":"number",
+                "caption":"Setback of beam 2 (sb2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BEAM2_SETBACK" 
+            },
+            {
+                "name":"beam_1_cope",
+                "type":"number",
+                "caption":"Bottom flange cope of beam 1",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"false",
+                "enabled":"true",
+               "para":"BEAM1_COPE_LENGTH" 
+            },
+            {
+                "name":"beam_2_cope",
+                "type":"number",
+                "caption":"Bottom flange cope of beam 2",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"false",
+                "enabled":"true",
+               "para":"BEAM2_COPE_LENGTH" 
+            },
+            {
+                "name":"column_section",
+                "type":"select",
+                "caption":"Column section (column joints)",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"w_sections",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"COLUMN_SECTION" 
+            },
+            {
+                "name":"column_orientation",
+                "type":"select",
+                "caption":"Column oreintation (column joints)",
+                "value_list":["0","90"],
+                "item_list":["Web parallel to connection 1","Web parallel to connection 2"],
+                "data_type":"",
+                "value":"1",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"COLUMN_ORIENTATION" 
+            },
+            {
+                "name":"conn_type_1",
+                "type":"select",
+                "caption":"Connection1 type",
+                "value_list":["CLIP_ANGLE","SHEAR_TAB","BOTTOM_FLANGE"],
+                "item_list":["Clip angle","Shear tab","Beam bottom flange"],
+                "value":"CLIP_ANGLE",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION1_TYPE" 
+            },
+            {
+                "name":"conn_type_2",
+                "type":"select",
+                "caption":"Connection2 type",
+                "value_list":["CLIP_ANGLE","SHEAR_TAB","BOTTOM_FLANGE"],
+                "item_list":["Clip angle","Shear tab","Beam bottom flange"],
+                "value":"CLIP_ANGLE",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION2_TYPE" 
+            },
+            {
+                "name":"location_1",
+                "type":"number",
+                "caption":"Location of connection1 (L1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION1_LOCATION" 
+            },
+            {
+                "name":"location_2",
+                "type":"number",
+                "caption":"Location of connection2 (L2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION2_LOCATION" 
+            },
+            {
+                "name":"clip_angle",
+                "type":"select",
+                "caption":"Clip angle section",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"angles",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"CLIP_SECTION" 
+            },
+            {
+                "name":"clip_oustanding_leg",
+                "type":"select",
+                "caption":"Clip outstanding leg",
+                "value_list":["LONG_LEG","SHORT_LEG"],
+                "item_list":["Long leg","Short leg"],
+                "value":"LONG_LEG",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"CLIP_OUTSTANDING_LEG"
+            },
+            {
+                "name":"tab_width",
+                "type":"number",
+                "caption":"Shear tab width (ws)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+                "para":"TAB_WIDTH"
+            },
+            {
+                "name":"tab_thickness",
+                "type":"number",
+                "caption":"Shear tab thickness",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+                "para":"TAB_THICKNESS"
+            }
+
+        ]
+    },
+    {
+
+        "tab_name":"gusset",
+        "tab_caption":"Gusset details",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+
+            {
+                "name":"gusset_thickness",
+                "type":"number",
+                "caption":"Gusset plate thickness",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"",
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"GUSSET_THICKNESS" 
+            },
+            {
+                "name":"gusset_offset",
+                "type":"number",
+                "caption":"Gusset offset from top (t)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"GUSSET_TOP_OFFSET" 
+            },
+            {
+                "name":"gusset_length_1",
+                "type":"number",
+                "caption":"Gusset length @ connection1 (G1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"GUSSET_LENGTH_1" 
+            },
+            {
+                "name":"gusset_length_2",
+                "type":"number",
+                "caption":"Gusset length @ connection2 (G2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"GUSSET_LENGTH_2" 
+            },
+            {
+                "name":"cutout_1",
+                "type":"number",
+                "caption":"Gusset cutout @ connection1 (c1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION1_CUTOUT" 
+            },
+            {
+                "name":"cutout_2",
+                "type":"number",
+                "caption":"Gusset cutout @ connection2 (c2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION2_CUTOUT" 
+            },
+            {
+                "name":"setback_1",
+                "type":"number",
+                "caption":"Gusset setback @ connection1 (b1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION1_SETBACK" 
+            },
+            {
+                "name":"setback_2",
+                "type":"number",
+                "caption":"Gusset setback @ connection2 (b2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION2_SETBACK" 
+            },
+            {
+                "name":"extension_1",
+                "type":"number",
+                "caption":"Gusset extension at connection 1 (ex1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION1_EXTENSION" 
+            },
+            {
+                "name":"extension_2",
+                "type":"number",
+                "caption":"Gusset extension at connection 2 (ex2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION2_EXTENSION" 
+            }
+
+        ]
+    },
+    { 
+        "tab_name":"Details",
+        "tab_caption":"Details",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"bolt_dia",
+                "type":"select",
+                "caption":"Bolt diameter",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"bolts",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"BOLT_DIAMETER"
+            },
+            {
+                "name":"bolt_type",
+                "type":"select",
+                "caption":"Bolt type",
+                "value_list":["FRICTION","BEARING"],
+                "item_list":["Friction","Bearing"],
+                "value":"BEARING",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"BOLT_TYPE"
+            },
+            {
+                "name":"faying_surface",
+                "type":"select",
+                "caption":"Bolt surface preparation",
+                "value_list":["CLASS_A","CLASS_B"],
+                "item_list":["Class A","Class B"],
+                "value":"CLASS_A",
+                "unit_type":"",
+                "required":"false",
+                "enabled":"true",
+                "para":"FAYING_SURFACE"
+            },
+            {
+                "name":"bolt_number",
+                "type":"number",
+                "caption":"Number of bolts @ brace (n)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BRACE_NUMBER_OF_BOLTS_PER_ROW" 
+            },
+            {
+                "name":"bolt_rows",
+                "type":"select",
+                "caption":"Number of bolt rows @ brace (nr)",
+                "value_list":["1","2"],
+                "item_list":["1","2"],
+                "value":"1",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BRACE_NUMBER_OF_BOLT_ROWS" 
+            },
+            {
+                "name":"bolt_number_1",
+                "type":"number",
+                "caption":"Number of bolts @ connection1 (n1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION1_NUMBER_OF_BOLTS" 
+            },
+            {
+                "name":"bolt_number_2",
+                "type":"number",
+                "caption":"Number of bolts @ connection2 (n2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION2_NUMBER_OF_BOLTS" 
+            },
+            {
+                "name":"bolt_spacing",
+                "type":"number",
+                "caption":"Bolt spacing (s)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+                "para":"BOLT_SPACING"
+            },
+            {
+                "name":"bolt_row_spacing",
+                "type":"number",
+                "caption":"Bolt row spacing (sr)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_ROW_SPACING" 
+            },
+            {
+                "name":"bolt_gage_brace",
+                "type":"number",
+                "caption":"Bolt gage on brace (g)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+                "para":"BOLT_GAGE_ON_BRACE"
+            },
+            {
+                "name":"bolt_gage_clip",
+                "type":"number",
+                "caption":"Bolt gage on clip (gc)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_GAGE_ON_CLIP" 
+            },
+            {
+                "name":"bolt_gage_tab",
+                "type":"number",
+                "caption":"Bolt gage on tab (gs)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_GAGE_ON_TAB" 
+            },
+            {
+                "name":"bolt_gage_beam1",
+                "type":"number",
+                "caption":"Bolt gage on beam 1 (gb1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_GAGE_ON_BEAM1" 
+            },
+            {
+                "name":"bolt_gage_beam2",
+                "type":"number",
+                "caption":"Bolt gage on beam 2 (gb2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_GAGE_ON_BEAM2" 
+            },
+            {
+                "name":"edge_gusset",
+                "type":"number",
+                "caption":"Bolt edge distance on gusset (e1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"EDGE_DISTANCE_ON_GUSSET" 
+            },
+            {
+                "name":"edge_brace",
+                "type":"number",
+                "caption":"Bolt edge distance on brace (e2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"EDGE_DISTANCE_ON_BRACE" 
+            },
+            {
+                "name":"edge_tab",
+                "type":"number",
+                "caption":"Bolt edge distance on shear tab (e3)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"EDGE_DISTANCE_ON_TAB" 
+            },
+            {
+                "name":"edge_clip",
+                "type":"number",
+                "caption":"Bolt edge distance on clip (e4)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"EDGE_DISTANCE_ON_CLIP" 
+            },
+            {
+                "name":"tab_weld",
+                "type":"number",
+                "caption":"Shear tab weld thickness (w1)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"TAB_TO_BEAM_WELD" 
+            },
+            {
+                "name":"clip_weld",
+                "type":"number",
+                "caption":"Clip angle weld thickness (w2)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CLIP_TO_GUSSET_WELD" 
+            }
+        ]
+    }
+
+      
+]

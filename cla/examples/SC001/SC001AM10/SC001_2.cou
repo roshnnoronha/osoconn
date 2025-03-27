@@ -1,0 +1,162 @@
+Osoconn v1.1
+Connection code : SC001AM10
+Connection ID : SC001_2
+-----------------------------------------------------------------------+---------------------
+Design Summary                                                         | 
+-----------------------------------------------------------------------+---------------------
+   Connection is OK                                                    |  
+   Maximum utility ratio for connection                                | 0.799 
+-----------------------------------------------------------------------+---------------------
+Design Inputs                                                          | 
+-----------------------------------------------------------------------+---------------------
+   Design method                                                       | LRFD 
+   Young's modulus of elasticity                                       | 200000.000 MPa
+   Poisson's ratio                                                     | 0.300 
+                                                                       | 
+Connection forces:                                                     | 
+   Transfer force (TF)                                                 | 120000.000 N
+   Shear force (SF)                                                    | 160000.000 N
+                                                                       | 
+Bolt Details:                                                          | 
+   Bolt Diameter                                                       | 22.000 mm
+   Number of bolts per clip angle (n)                                  | 4.000 
+   Bolt Gage                                                           | 140.000 mm
+   Bolt Spacing                                                        | 70.000 mm
+   Nominal tensile capacity of bolt                                    | 620.000 MPa
+   Nominal shear capacity of bolt                                      | 372.000 MPa
+                                                                       | 
+Weld Details:                                                          | 
+   Weld thickness                                                      | 6.000 mm
+   Weld tensile strength                                               | 482.000 MPa
+                                                                       | 
+Clip angle dimensions:                                                 | 
+   Clip angle  size (li x lo x ta)                                     | 76.2x127x9.53 mm
+   Clip angle length                                                   | 270.000 mm
+   Yield strength of clip angle                                        | 250.000 MPa
+   Tensile strenght of clip angle                                      | 400.000 MPa
+                                                                       | 
+Connecting beam properties:                                            | 
+   Section size                                                        | W410X53 
+      Depth                                                            | 404.000 mm
+      Flange width                                                     | 178.000 mm
+      Flange thickness                                                 | 10.900 mm
+      Web thickness (tw)                                               | 7.490 mm
+   Yield strength of beam                                              | 250.000 MPa
+   Tensile strength of beam                                            | 400.000 MPa
+   Beam setback from connection member (s)                             | 12.000 mm
+                                                                       | 
+Supporting member properties:                                          | 
+   Support type                                                        | Column Flange 
+   Section size                                                        | W360X91 
+      Depth                                                            | 353.000 mm
+      Flange width                                                     | 254.000 mm
+      Flange thickness                                                 | 16.400 mm
+      Web thickness                                                    | 9.530 mm
+   Yield strength of support                                           | 345.000 MPa
+   Tensile strength of support                                         | 450.000 MPa
+-----------------------------------------------------------------------+---------------------
+Design Calculations                                                    | 
+-----------------------------------------------------------------------+---------------------
+                                                                       | 
+Bolt Shear Check:                                                      | 
+   Shear per bolt                                                      | 
+      [Vb=SF/(2*n)]                                                    | 20000.000 N
+   Nominal shear strength of bolt (Rn)                                 | 141427.704 N
+   LRFD factor in bolt shear (phi)                                     | 0.750 
+   Allowable shear strength of bolt                                    | 
+      [Ra=phi*Rn]                                                      | 106070.778 N
+   Interaction ratio in bolt shear                                     | 
+      [Vb/Ra]                                                          | 0.189 
+                                                                       | 
+Bolt Tension Check (without prying:                                    | 
+   Tension per bolt without prying                                     | 
+      [Tb=TF/(2*n)]                                                    | 15000.000 N
+   Nominal bolt strength in tension (Rn)                               | 235562.800 N
+   LRFD factor in bolt tension (phi)                                   | 0.750 
+   Allowable bolt strength in tension                                  | 
+      [B=phi*Rn]                                                       | 176672.100 N
+   Interaction ratio in bolt tension                                   | 
+      [Tb/B]                                                           | 0.085 
+                                                                       | 
+Bolt Bearing at Clip Angle Check:                                      | 
+   Nominal strength in bearing at clip angle (Rn)                      | 82339.200 N
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bearing at clip angle                         | 
+      [Ra=phi*Rn]                                                      | 61754.400 N
+   Interaction ratio in bearing at clip angle                          | 
+      [Vb/Ra]                                                          | 0.324 
+                                                                       | 
+Bolt Bearing at Support Check:                                         | 
+   Nominal strength in bearing at support (Rn)                         | 389664.000 N
+   LRFD factor in bolt bearing (phi)                                   | 0.750 
+   Allowable strength in bearing at support                            | 
+      [Ra=phi*Rn]                                                      | 292248.000 N
+   Strength reduction factor to account for backing beam (r)           | 1.000 
+   Interaction ratio in bearing at support                             | 
+      [Vb/(Ra*r)]                                                      | 0.068 
+                                                                       | 
+Clip Angle Shear Yielding Check:                                       | 
+   Shear in clip angle                                                 | 
+      [Va=sqrt(TF^2+SF^2)/2]                                           | 100000.000 N
+   Nominal shear yeilding strength of clip angle (Rn)                  | 385965.000 N
+   LRFD factor for shear yielding (phi)                                | 1.000 
+   Allowable shear yielding strength of clip angle                     | 
+      [Ra=phi*Rn]                                                      | 385965.000 N
+   Interaction ratio in shear yielding                                 | 
+      [Va/Ra]                                                          | 0.259 
+                                                                       | 
+Clip Angle Shear Rupture Check:                                        | 
+   Nominal shear rupture strength of clip angle (Rn)                   | 397972.800 N
+   LRFD factor for shear rupture (phi)                                 | 0.750 
+   Shear rupture strength of clip angle                                | 
+      [Ra=phi*Rn]                                                      | 298479.600 N
+   Interaction ratio in shear rupture                                  | 
+      [Va/Ra]                                                          | 0.335 
+                                                                       | 
+Clip Angle Block Shear Check:                                          | 
+   Nominal block shear strength of clip angle (Rn)                     | 871975.940 N
+   LRFD factor for block shear (phi)                                   | 0.750 
+   Block shear strength of clip angle                                  | 
+      [Ra=phi*Rn]                                                      | 653981.955 N
+   Interaction ratio in block shear                                    | 
+      [SF/Ra]                                                          | 0.245 
+                                                                       | 
+Clip angle prying action check:                                        | 
+   Bolt strength reduction factor due to clip prying (Q)               | 0.106 
+   Interaction ratio in clip prying                                    | 
+      [Tb/(Q*B)]                                                       | 0.799 
+                                                                       | 
+Column flange prying action check:                                     | 
+   Bolt strength reduction factor due to column flange prying (Q)      | 0.683 
+   Interaction ratio in column flange prying                           | 
+      [Tb/(Q*B)]                                                       | 0.124 
+                                                                       | 
+Weld Check:                                                            | 
+   Maximum stress in weld group (fw)                                   | 421.204 N/mm
+   Nominal strength of weld (Rn)                                       | 1226.786 N/mm
+   LRFD factor for weld (phi)                                          | 0.750 
+   Allowable weld strength                                             | 
+      [Ra=phi*Rn]                                                      | 920.090 N/mm
+   Interaction ratio for weld                                          | 
+      [fw/Ra]                                                          | 0.458 
+                                                                       | 
+Web Rupture at Weld Check:                                             | 
+   Minimum thickness of web at weld (tw`)                              | 4.680 mm
+   Interaction ratio in rupture at weld                                | 
+      [tw`/tw]                                                         | 0.625 
+                                                                       | 
+Column web yielding check:                                             | 
+   Nominal strength of column web yielding (Rn)                        | 1146637.688 N
+   LRFD factor in web yielding (phi)                                   | 1.000 
+   Allowable strength of column in web yielding                        | 
+      [Ra=Rn*phi]                                                      | 1146637.688 N
+   Interaction ratio in column web yielding                            | 
+      [TF/Ra]                                                          | 0.105 
+                                                                       | 
+Column web crippling check:                                            | 
+   Nominal strength of column in web crippling (Rn)                    | 897291.132 N
+   LRFD factor in web crippling (phi)                                  | 0.750 
+   Allowable strength of column in web crippling                       | 
+      [Ra=Rn*phi]                                                      | 672968.349 N
+   Interaction ratio in column web crippling                           | 
+      [TF/Ra]                                                          | 0.178 

@@ -1,0 +1,419 @@
+[
+    {
+        "tab_name":"general",
+        "tab_caption":"General",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"conn_id",
+                "type":"text",
+                "caption":"Connection ID",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"",
+                "required":"false",
+                "enabled":"true",
+                "para":"CONNECTION_ID"
+            },
+            {
+                "name":"units",
+                "type":"select",
+                "caption":"Unit system",
+                "value_list":["NEWTON_MM","KIP_IN"],
+                "item_list":["Newton,mm","Kip,in"],
+                "value":"NEWTON_MM",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"UNITS"
+            }
+        ]
+    },
+    { 
+        "tab_name":"forces",
+        "tab_caption":"Forces",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"method",
+                "type":"select",
+                "caption":"Design method",
+                "value_list":["ASD","LRFD"],
+                "item_list":["ASD","LRFD"],
+                "value":"ASD",
+                "unit_type":"", 
+                "required":"true",
+                "enabled":"true",
+                "para":"METHOD"
+            },
+            {
+                "name":"shear_force",
+                "type":"number",
+                "caption":"Shear force",
+                "value_list":[],
+                "item_list":[],
+                "value":"0",
+                "unit_type":"force",
+                "required":"true",
+                "enabled":"true",
+               "para":"SHEAR_FORCE" 
+            },
+            {
+                "name":"transfer_force",
+                "type":"number",
+                "caption":"Transfer force",
+                "value_list":[],
+                "item_list":[],
+                "value":"0",
+                "unit_type":"force",
+                "required":"true",
+                "enabled":"true",
+                "para":"TRANSFER_FORCE"
+            }
+        ]
+    },
+    { 
+        "tab_name":"materials",
+        "tab_caption":"Materials",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"angle_grade",
+                "type":"select",
+                "caption":"Angle grade",
+                "value_list":["A36","A992"],
+                "item_list":["ASTM A36","ASTM A992"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"STEEL_GRADE_OF_ANGLE"
+            },
+            {
+                "name":"beam_grade",
+                "type":"select",
+                "caption":"Beam grade",
+                "value_list":["A36","A992"],
+                "item_list":["ASTM A36","ASTM A992"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"STEEL_GRADE_OF_BEAM"
+            },
+            {
+                "name":"support_grade",
+                "type":"select",
+                "caption":"Support grade",
+                "value_list":["A36","A992"],
+                "item_list":["ASTM A36","ASTM A992"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"STEEL_GRADE_OF_SUPPORT" 
+            },
+            {
+                "name":"bolt_grade",
+                "type":"select",
+                "caption":"Bolt grade",
+                "value_list":["A325","A490"],
+                "item_list":["ASTM F3125 A325","ASTM F3125 A490"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"BOLT_GRADE" 
+            },
+            {
+                "name":"weld_grade",
+                "type":"select",
+                "caption":"Weld grade",
+                "value_list":["E70"],
+                "item_list":["E70"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"WELD_ELECTRODE" 
+            },
+            {
+                "name":"youngs_modulus",
+                "type":"number",
+                "caption":"Young's modulus for steel",
+                "value_list":[],
+                "item_list":[],
+                "value":"200000",
+                "unit_type":"stress",
+                "required":"true",
+                "enabled":"true",
+                "para":"MODULUS_OF_ELASTICITY"
+            },
+            {
+                "name":"poisson",
+                "type":"number",
+                "caption":"Poisson's ratio for steel",
+                "value_list":[],
+                "item_list":[],
+                "value":"0.3",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+                "para":"POISSON_RATIO"
+            }
+        ]
+    },
+    { 
+        "tab_name":"geometry",
+        "tab_caption":"Geometry",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"beam_section",
+                "type":"select",
+                "caption":"Beam section",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"w_sections",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BEAM_SECTION" 
+            },
+            {
+                "name":"top_cope",
+                "type":"number",
+                "caption":"Cope depth at beam top (t)",
+                "value_list":[],
+                "item_list":[],
+                "value":"0",
+                "unit_type":"length",
+                "required":"false",
+                "enabled":"true",
+               "para":"TOP_COPE_DEPTH" 
+            },
+            {
+                "name":"bottom_cope",
+                "type":"number",
+                "caption":"Cope depth at beam bottom (b)",
+                "value_list":[],
+                "item_list":[],
+                "value":"0",
+                "unit_type":"length",
+                "required":"false",
+                "enabled":"true",
+               "para":"BOTTOM_COPE_DEPTH" 
+            },
+            {
+                "name":"cope_length",
+                "type":"number",
+                "caption":"Cope length in beam (c)",
+                "value_list":[],
+                "item_list":[],
+                "value":"0",
+                "unit_type":"length",
+                "required":"false",
+                "enabled":"true",
+                "para":"COPE_LENGTH"
+            },
+            {
+                "name":"support_type",
+                "type":"select",
+                "caption":"Support member type",
+                "value_list":["BEAM","COLUMN_FLANGE","COLUMN_WEB"],
+                "item_list":["Beam","Column flange","Column web"],
+                "value":"BEAM",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"SUPPORT_TYPE" 
+            },
+            {
+                "name":"support_section",
+                "type":"select",
+                "caption":"Support section",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"w_sections",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"SUPPORT_SECTION" 
+            },
+            {
+                "name":"clip_section",
+                "type":"select",
+                "caption":"Clip angle section",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"angles",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"CLIP_ANGLE" 
+            },
+            {
+                "name":"outstanding_leg",
+                "type":"select",
+                "caption":"Outstanding leg",
+                "value_list":["LONG_LEG","SHORT_LEG"],
+                "item_list":["Long leg","Short leg"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"OUTSTANDING_LEG" 
+            },
+            {
+                "name":"clip_length",
+                "type":"number",
+                "caption":"Clip angle length (L)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CLIP_ANGLE_LENGTH" 
+            },
+            {
+                "name":"clip_top",
+                "type":"number",
+                "caption":"Top of clip angle (a)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CLIP_ANGLE_TOP" 
+            },
+            {
+                "name":"setback",
+                "type":"number",
+                "caption":"Connection setback (e)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"CONNECTION_SETBACK" 
+            },
+            {
+                "name":"backing_beam",
+                "type":"select",
+                "caption":"Consider backing beam",
+                "value_list":["YES","NO"],
+                "item_list":["Yes","No"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BACKING_BEAM" 
+            }
+
+        ]
+    },
+    { 
+        "tab_name":"details",
+        "tab_caption":"Details",
+        "tab_expanded":"true",
+        "tab_fields":
+        [
+            {
+                "name":"bolt_dia",
+                "type":"select",
+                "caption":"Bolt diameter",
+                "value_list":[],
+                "item_list":[],
+                "data_type":"bolts",
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_DIAMETER" 
+            },
+            {
+                "name":"bolt_type",
+                "type":"select",
+                "caption":"Bolt type",
+                "value_list":["BEARING","FRICTION"],
+                "item_list":["Bearing","Friction"],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_TYPE" 
+            },
+            {
+                "name":"faying_surface",
+                "type":"select",
+                "caption":"Bolt surface preparation",
+                "value_list":["CLASS_A","CLASS_B"],
+                "item_list":["Class A","Class B"],
+                "value":"CLASS_A",
+                "unit_type":"",
+                "required":"false",
+                "enabled":"true",
+                "para":"FAYING_SURFACE"
+            },
+            {
+                "name":"bolt_number",
+                "type":"number",
+                "caption":"Number of bolts (n)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"",
+                "required":"true",
+                "enabled":"true",
+               "para":"NUMBER_OF_BOLTS_PER_ROW" 
+            },
+            {
+                "name":"bolt_spacing",
+                "type":"number",
+                "caption":"Bolt spacing (s)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+               "para":"BOLT_SPACING" 
+            },
+            {
+                "name":"bolt_gage",
+                "type":"number",
+                "caption":"Bolt gage (g)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+                "para":"BOLT_GAGE"
+            },
+            {
+                "name":"weld_thickness",
+                "type":"number",
+                "caption":"Weld thickness (w)",
+                "value_list":[],
+                "item_list":[],
+                "value":"",
+                "unit_type":"length",
+                "required":"true",
+                "enabled":"true",
+                "para":"THICKNESS_OF_WELD"
+            }
+        ]
+    }
+]

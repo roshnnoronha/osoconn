@@ -1,0 +1,253 @@
+Osoconn v1.1
+Connection code : MC001AM10
+Connection ID : MC001_5
+-----------------------------------------------------------------------+---------------------
+Design Summary                                                         | 
+-----------------------------------------------------------------------+---------------------
+   Connection is OK                                                    |  
+   Maximum interaction ratio                                           | 0.996 
+-----------------------------------------------------------------------+---------------------
+Design Inputs                                                          | 
+-----------------------------------------------------------------------+---------------------
+   Extended plate moment connection configuration                      | 4 BOLT - STIFFENED 
+   Design method                                                       | ASD 
+   Shear force in connection (V)                                       | 30000.000 N
+   Column axial force                                                  | 540000.000 N
+   Modulus of elasticity of steel                                      | 200000.000 MPa
+   Yield strength of beam (Fyb)                                        | 345.000 MPa
+   Tensile strength of beam                                            | 450.000 MPa
+   Yield strength of column                                            | 345.000 MPa
+   Tensile strength of column                                          | 450.000 MPa
+   Yield strength of plate                                             | 250.000 MPa
+   Tensile strength of plate                                           | 400.000 MPa
+   Tensile strength of weld                                            | 482.000 MPa
+   Material overstrength factor for beam (Ry)                          | 1.100 
+   End plate dimensions (b x d x tp)                                   | 400 x 900 x 35 mm
+   Bolt diamter                                                        | 30.000 mm
+   Bolt grade                                                          | ASTM A490 
+   Thickness of beam web to plate fillet weld                          | 10.000 mm
+   Thickness of flange weld reinforing fillet weld                     | 8.000 mm
+   Thickness of end plate stiffener (tsp)                              | 16.000 mm
+   Length of end plate stiffener                                       | 400.000 mm
+   Thickness of plate stiffener to beam flange weld                    | 12.000 mm
+   Beam section property                                               | W460X60 
+      Depth (d)                                                        | 455.000 mm
+      Flange width                                                     | 153.000 mm
+      Web thickness                                                    | 8.000 mm
+      Flange thickness (tf)                                            | 13.300 mm
+      Fillet dimension                                                 | 23.500 mm
+      Plastic section modulus (Zx)                                     | 1280000.000 mm^3
+   Column section property                                             | W360X196 
+      Depth                                                            | 373.000 mm
+      Flange width                                                     | 373.000 mm
+      Web thickness                                                    | 16.400 mm
+      Flange thickness                                                 | 26.200 mm
+      Fillet dimension                                                 | 41.400 mm
+   Thickness of column stiffener (tsc)                                 | 18.000 mm
+   Width of column stiffener                                           | 150.000 mm
+   Column stiffener clip dimension                                     | 25.000 mm
+   Column stiffener to flange weld                                     | 14.000 mm
+   Column stiffener to web weld                                        | 6.000 mm
+   Thickness of column doubler plate                                   | 35.000 mm
+   Height of column doubler plate                                      | 850.000 mm
+   Column doubler to flange weld                                       | 10.000 mm
+-----------------------------------------------------------------------+---------------------
+Design calculations                                                    | 
+-----------------------------------------------------------------------+---------------------
+                                                                       | 
+Connection design forces:                                              | 
+   Required plastic moment capacity of beam                            | 
+      [Mpe=1.1*Ry*Fyb*Zx]                                              | 534336000.000 N mm
+   Distance from the face of the column to the plastic hinge (Lp)      | 435.000 mm
+   Required moment capacity of connection                              | 
+      [Muc=Mpe+1.5*V*Lp]                                               | 547386000.000 N mm
+   Flange force                                                        | 
+      [Fu=Muc/(d-tf)]                                                  | 1239270.998 N
+                                                                       | 
+Bolt Tension check:                                                    | 
+   Distance of the centerline of the beam compression flange to the    |  
+      1st tension bolt row (h0)                                        | 608.350 mm
+      2nd tension bolt row (h1)                                        | 391.700 mm
+   Bolt nominal tensile stress                                         | 780.000 MPa
+   Required bolt diameter                                              | 
+      [db`=sqrt(2*Muc/(PI*phi_bv*Fnt*(h0+h1)))]                        | 29.891 mm
+   Interaction ratio in bolt tension                                   | 
+      [db`/db]                                                         | 0.996 
+                                                                       | 
+Bolt Shear Rupture Check:                                              | 
+   Number of bolts provided at compression flange (nc)                 | 4.000 
+   Nominal shear strength of bolt (Vb)                                 | 331559.550 N
+   Nominal shear strength of connectionType                            | 
+      [Rn=nc*Vb]                                                       | 1326238.200 N
+   ASD factor in bolt shear (omega)                                    | 2.000 
+   Bolt shear capacity                                                 | 
+      [Ra=Rn/omega]                                                    | 663119.100 N
+   Interaction ratio in bolt shear                                     | 
+      [Vu/Ra]                                                          | 0.045 
+                                                                       | 
+Bolt Bearing on Plate:                                                 | 
+   Nominal strength in bolt bearing on plate (Rn)                      | 3561600.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Bolt bearing on plate capacity                                      | 
+      [Ra=Rn/omega]                                                    | 1780800.000 N
+   Interaction ratio in bolt bearing on plate                          | 
+      [Vu/Ra]                                                          | 0.017 
+                                                                       | 
+Bolt Bearing on Column Flange:                                         | 
+   Nominal strength in bolt bearing on flange (Rn)                     | 3395520.000 N
+   ASD factor in bolt bearing (omega)                                  | 2.000 
+   Bolt bearing on flange capacity                                     | 
+      [Ra=Rn/omega]                                                    | 1697760.000 N
+   Interaction ratio in bolt bearing on flange                         | 
+      [Vu/Ra]                                                          | 0.018 
+                                                                       | 
+Plate Thickness Calculation:                                           | 
+   Bolt tensile strength (Pt)                                          | 551070.000 N
+   No prying design moment                                             | 
+      [Mnp= 2*Pt*(h0+h1)]                                              | 1102195107.000 N mm
+   ASD factor in bolt rupture (omega)                                  | 2.000 
+   ASD factor in bending (omega_b)                                     | 1.670 
+   Yield line parameter for plate (Yp)                                 | 6169.145 mm
+   Required minimum plate thickness                                    | 
+      [tp`=sqrt(1.11*omega_b*Mnp/(omega*Fyp*Yp))]                      | 25.737 mm
+   Interaction ratio for plate thickness                               | 
+      [tp`/tp]                                                         | 0.735 
+                                                                       | 
+Beam Web to End Plate Weld Tension Check:                              | 
+   Required tension strength of weld at beam web (fw)                  | 2760.000 N/mm
+   Nominal strength of weld at beam web (fn)                           | 6133.932 N/mm
+   ASD factor in weld (omega)                                          | 2.000 
+   Beam web weld capacity                                              | 
+      [fa=fn/omega]                                                    | 3066.966 N/mm
+   Interaction ratio for beam web weld in tension                      | 
+      [fw/fa]                                                          | 0.900 
+                                                                       | 
+Beam Web to End Plate Weld Shear Check:                                | 
+   Total weld length                                                   | 431.600 mm
+   Nominal strength of weld at beam web (Rn)                           | 882468.350 N
+   ASD factor in weld (omega)                                          | 2.000 
+   Beam web weld capacity                                              | 
+      [Ra=Rn/omega]                                                    | 441234.175 N
+   Interaction ratio for beam web weld in shear                        | 
+      [Vu/Ra]                                                          | 0.068 
+                                                                       | 
+End Plate Stiffener Thickness Check:                                   | 
+   Required minimum stiffener thickness (tsp`)                         | 14.081 mm
+   Interaction ratio for stiffener thickness                           | 
+      [tsp`/tsp]                                                       | 0.880 
+                                                                       | 
+End Plate Stiffener to Flange Weld Check:                              | 
+   Required strength of stiffener weld                                 | 
+      [Vs=0.6*Fyp*ts]                                                  | 2400.000 N/mm
+   Nominal strength of stiffener to flange weld (Rn)                   | 4907.146 N/mm
+   ASD factor in weld (omega)                                          | 2.000 
+   Stiffener to flange weld capacity                                   | 
+      [Ra=Rn/omega]                                                    | 2453.573 N
+   Interaction ratio for stiffener to flange weld                      | 
+      [Vs/Ra]                                                          | 0.978 
+                                                                       | 
+Column Flange Yielding Check:                                          | 
+   Column yield line parameter (Yc)                                    | 6934.378 mm
+   ASD factor in bolt rupture (omega)                                  | 2.000 
+   ASD factor in flexure (omega_b)                                     | 1.670 
+   Required minimum column flange thickness                            | 
+      [tf`=sqrt(1.11*omega_b*Mnp/(omega*Fyc*Yc))]                      | 20.664 mm
+   Interaction ratio for column flange yielding                        | 
+      [ratio=tf`/tf]                                                   | 0.789 
+                                                                       | 
+Column Web Yielding Check:                                             | 
+   Bearing length                                                      | 
+      [N=tf+2*wb]                                                      | 29.300 mm
+   Nominal strength of column web in local yielding (Rn)               | 1066533.000 N
+   LRFD factor in local web yielding (omega)                           | 1.500 
+   Column local web yielding capacity                                  | 
+      [Ra=Rn/omega]                                                    | 711022.000 N
+   Interaction ratio in web local yielding                             | 
+      [Fu/Ra]                                                          | 0.000 
+                                                                       | 
+Column Local Web Crippling Check:                                      | 
+   Nominal strength in column web crippling (Rn)                       | 2522724.774 N
+   ASD factor in web crippling (omega)                                 | 2.000 
+   Column web crippling capacity                                       | 
+      [Ra=Rn/omega]                                                    | 1261362.387 N
+   Interaction ratio in web crippling                                  | 
+      [Fu/Ra]                                                          | 0.000 
+                                                                       | 
+Column Panel Shear Check:                                              | 
+   Nominal strength of column in panel shear                           | 1615715.689 N
+   ASD factor for column panel shear (omega)                           | 1.670 
+   Column panel shear capacity                                         | 
+      [Ra=Rn/omega]                                                    | 967494.425 N
+   Interaction ratio for column panel shear                            | 
+      [Fu/Ra]                                                          | 0.000 
+                                                                       | 
+Column Web Shear Buckling Check:                                       | 
+   Minimum thickness of web to prevent shear buckling (tw`)            | 8.470 mm
+   Interaction ratio for thickness of web                              | 
+      [tw`/tw]                                                         | 0.516 
+                                                                       | 
+Transverse Stiffener Axial Strength:                                   | 
+   Required strength of column stiffener (Ru)                          | 528248.998 N
+   Nominal yield strength of stiffener (Rn)                            | 562500.000 N
+   ASD factor in axial strength (omega)                                | 1.670 
+   Stiffener axial yield capacity                                      | 
+      [Ra=Rn/omega]                                                    | 1261362.387 N
+   Interaction ratio for stiffener in axial strength                   | 
+      [Ru/Ra]                                                          | 0.784 
+                                                                       | 
+Transverse stiffener shear strength:                                   | 
+   Nominal shear strength of stiffener (Rn)                            | 730620.000 N
+   ASD factor in stiffener shear strength (omega)                      | 1.670 
+   Stiffener shear capacity                                            | 
+      [Ra=Rn/omega]                                                    | 437497.006 N
+   Interaction ratio for stiffener in shear                            | 
+      [Ru/(2*Ra)]                                                      | 0.604 
+                                                                       | 
+Transverse Stiffener Thickness Check:                                  | 
+   Minimum required thickness of stiffener (tsc`)                      | 9.508 mm
+   Interaction ratio for stiffener thickness                           | 
+      [tsc`/tsc]                                                       | 0.528 
+                                                                       | 
+Transverse Stiffener to Flange Weld Check:                             | 
+   Required strength for stifferner to flange weld (Ps)                | 4050.000 N/mm
+   Nominal strength of stiffener to flange weld (Rn)                   | 8587.505 N/mm
+   ASD factor weld strength (omega)                                    | 2.000 
+   Stiffener to flange weld capacity                                   | 
+      [Ra=Rn/omega]                                                    | 4293.752 N
+   Interaction ratio for stiffener to flange weld                      | 
+      [Ps/Ra]                                                          | 0.943 
+                                                                       | 
+Transverse Stiffener to Web Weld Check:                                | 
+   Nominal strength of stiffener to web weld (Rn)                      | 663936.800 N/mm
+   ASD factor weld strength (omega)                                    | 2.000 
+   Stiffener to web weld capacity                                      | 
+      [Ra=Rn/omega]                                                    | 331968.400 N/mm
+   Interaction ratio for stiffener to web weld                         | 
+      [Ru/(2*Ra)]                                                      | 0.796 
+                                                                       | 
+Doubler Plate Shear Check:                                             | 
+   Required shear strength of doubler plate (Vd)                       | 271776.574 N
+   Nomimal shear strength of doubler plate (Rn)                        | 1958250.000 N
+   ASD factor for shear (omega)                                        | 1.500 
+   Doubler plate shear capacity                                        | 
+      [Ra=Rn/omega]                                                    | 1305500.000 N
+   Interaction ratio for doubler plate shear                           | 
+      [Vd/Ra]                                                          | 0.208 
+                                                                       | 
+Doubler Plate Height Check:                                            | 
+   Minimum required height of doubler plate (wd`)                      | 773.400 mm
+   Interaction ratio for doubler plate height                          | 
+      [wd`/wd]                                                         | 0.910 
+                                                                       | 
+Doubler Plate Thickness Check:                                         | 
+   Minimum required thickness of doubler plate (td`)                   | 8.270 mm
+   Interaction ratio for doubler plate thickness                       | 
+      [td`/td]                                                         | 0.236 
+                                                                       | 
+Doubler Plate to Flange Weld Check:                                    | 
+   Nominal strength of doubler to flange weld (Rn)                     | 1737947.400 N
+   ASD factor weld strength (omega)                                    | 2.000 
+   Doubler to flange weld capacity                                     | 
+      [Ra=Rn/omega]                                                    | 868973.700 N
+   Interaction ratio for plate to weld thickness                       | 
+      [Vd/Ra]                                                          | 0.313 
