@@ -7,10 +7,14 @@ project(osoconn VERSION 1.1)
 configure_file(${PROJECT_SOURCE_DIR}/data/AISCSections.db ${PROJECT_BINARY_DIR}/data/AISCSections.db COPYONLY)
 
 configure_file(${PROJECT_SOURCE_DIR}/include/osoconnConfig.h.in ${PROJECT_SOURCE_DIR}/include/osoconnConfig.h)
+
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
 add_subdirectory(sqlite3)
 
 add_executable(osoconn main.cpp)
 
+target_link_libraries(osoconn PUBLIC Threads::Threads)
 target_link_libraries(osoconn PUBLIC sqlite3)
 
 target_include_directories(osoconn PUBLIC
